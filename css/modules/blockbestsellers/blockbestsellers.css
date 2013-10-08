@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title_block{
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	font-size:17px;
+}
+.title_block a{
+	color:#FFF;	
+}
+
+ul.product_images{
+	list-style:none;	
+}
+.bestSellersImg{
+	width:70%;
+	margin-left:15%;
+	height:auto;
+	margin-top:10px;
+	border:1px solid #666;
+}
+
+.bestSellersInfo{
+	text-align:center;	
+}
+.bestSellersInfo a{
+	font-size:18px;
+	font-weight:bold;	
+}
+span.price{
+	font-size:14px;
+	font-weight:100;
+	color:#000;
+}
+#product_list{
+	border:1px solid #ccc;	
+}
+@media only screen and (max-width: 768px) {
+	.bestSellersImg{
+		width:40%;
+		margin-left:30%;
+		height:auto;	
+	}
+}

@@ -1,0 +1,889 @@
+1/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+	
+}
+li{
+	list-style:none;	
+}
+.panelTopBar{
+	width:100%;
+	height:46px;
+	background-image:url(../img/topMenu.jpg);
+}
+.panelLogoImages{
+	width:100%;
+	margin-top:-16px;
+	height:200px;
+	background-color:#FFF;
+}
+.panelLogoImagesM{
+	display:none;
+}
+.panelTopMenu{
+	width:100%;
+	margin-bottom:10px;
+	height:40px;
+	border-bottom:1px solid #999;
+	background: #91bbe2; /* Old browsers */
+	background: -moz-linear-gradient(top, #91bbe2 1%, #256cc4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#91bbe2), color-stop(100%,#256cc4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #91bbe2 1%,#256cc4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91bbe2', endColorstr='#256cc4',GradientType=0 ); /* IE6-9 */
+}
+.panelSideMenu{
+	width:100%;
+	background-color:#CCC;
+	margin-bottom:10px;
+}
+.panelCenterImg{
+	width:100%;
+	background-color:#FFF;
+	text-align:center;
+}
+.panelCenterImg img{
+	max-width:900px;
+	width:100%;
+}
+.panelFeaturedProducts{
+	width:100%;
+	background-color:#ccc;
+	margin-bottom:10px;
+	height:auto;
+	border:1px solid #999;
+}
+.panelMoreItems{
+	width:100%;
+	background-color:#ccc;
+	margin-bottom:10px;
+	height:400px;
+	border:1px solid #999;
+}
+.panelBestSellers{
+	width:100%;
+	background-color:#ccc;
+	margin-bottom:10px;
+	border:1px solid #999;
+}
+.panelManufacturers{
+	width:100%;
+	background-color:#ccc;
+	margin-bottom:10px;
+	border:1px solid #999;
+}
+.panelSections{
+	width:100%;
+	background-color:#FFF;
+	margin-bottom:10px;	
+	min-height:530px;
+}
+.panelSectionsM{
+	display:none;	
+}
+.panelFooter{
+	width:100%;
+	margin-bottom:10px;
+	height:180px;
+	border-top:1px solid #999;
+	background: #cccccc; /* Old browsers */
+	background: -moz-linear-gradient(top, #cccccc 1%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#cccccc), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cccccc 1%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cccccc 1%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cccccc 1%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #cccccc 1%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.panelSideMenu ul {
+	text-align:center;
+	list-style:none;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+}
+
+.panelSideMenu ul li{
+	padding-top:10px;
+	color:#333;
+	font-weight:bold;
+	padding-bottom:10px;
+	border-bottom:1px solid #000;
+	background: rgb(196,196,196); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 50%, rgba(196,196,196,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(196,196,196,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(196,196,196,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(196,196,196,1) 0%,rgba(255,255,255,1) 50%,rgba(196,196,196,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(196,196,196,1) 0%,rgba(255,255,255,1) 50%,rgba(196,196,196,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(196,196,196,1) 0%,rgba(255,255,255,1) 50%,rgba(196,196,196,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(196,196,196,1) 0%,rgba(255,255,255,1) 50%,rgba(196,196,196,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#c4c4c4',GradientType=0 ); /* IE6-9 */
+}
+.panelSideMenu ul li:hover{
+	background:#FFF;	
+}
+
+.titleBar{
+	background-image:url(../img/titlebar.svg);
+	background-size:100% 100%;
+	color:#FFF;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	font-size:17px;
+	word-wrap:break-word;
+}
+.title_block_bold{
+	font-weight:bold;	
+}
+
+.panelTopMenu #search{
+	float:left;
+	width:17%;
+	height:26px;
+	margin-left:5px;
+	border-radius:7px;
+	margin-top:7px;
+}
+.panelTopMenu #submit{
+	float:left;
+	width:4%;
+	height:26px;
+	border-radius:7px;
+	margin-left:1%;
+	font-size:12px;
+	margin-top:7px;
+}
+.panelTopMenu ul{
+	float:left;
+	width:70%;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+	list-style:none;
+	margin-left:2%;
+}
+.panelTopMenu ul li ul{
+	display:none;
+}
+
+.panelTopMenu li{
+	float:left;
+	color:#FFF;
+	padding-left:2%;
+	padding-right:2%;
+	line-height:40px;
+}
+
+.panelTopMenu li:hover{
+	background:#090;	
+}
+.panelTopMenu li:hover ul{
+	display:block;
+	position:absolute;
+	z-index:1;
+	margin-left:-1.4%;
+}
+.panelTopMenu li ul{
+	float:left;
+	background-color:#090;
+	width:49%;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+.panelTopMenu li ul li{
+	text-align:center;
+	width:20%;
+	float:left;
+	color:#FFF;
+}
+.panelTopMenu li ul li:hover{
+	background-color:#ccc;
+	color:#000;
+}
+.panelTopBar ul{
+	float:right;
+	line-height:40px;
+	margin-right:1%;
+	list-style:none;
+	width:400px;
+}
+.panelTopBar ul li{
+	float:left;
+	margin-left:43px;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+}
+#cartImg{
+	margin-left:5px;	
+}
+.panelTopBar ul li:hover{
+	color:#000;
+
+}
+.panelLogoImages img#leftImg{
+	float:left;
+	width:180px;
+	margin-left:10px;
+	margin-top:15px;
+}
+.panelLogoImages img#rightImg{
+	float:right;
+	position:absolute;
+	height: 200px;
+	max-width:980px;
+	/*min-width:700px*/
+	overflow:hidden;
+	width:68%;
+}
+#rightImgText{
+	width:60%;
+	z-index:1;
+	-webkit-text-stroke: 1px black;
+	color: white;
+	text-shadow:
+    3px 3px 0 #000,
+   -1px -1px 0 #000,  	
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+	position:relative;
+	padding-top:120px;
+	margin-left:280px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color:#FFF;
+	font-weight:bold;
+	font-size:20px;
+	display:block;
+}
+
+.footerSections{
+	float:left;
+	width: 23%;
+	text-align:center;
+	margin: 12px 1%;
+}
+.footerSections img{
+	width:100%;
+	max-width:200px;
+}
+
+.footerItems{
+	font-size:12px;
+}
+
+.footerSections ul{
+	list-style:none;
+	margin-bottom:0px;
+}
+
+.footerSections ul li{
+	color:#333;
+	font-weight:bold;
+	font-size:12px;
+}
+
+.footerSections p{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:7px;
+}
+
+.footerSections a{
+	font-size:12px;
+	font-weight:bold;
+}
+.clearBoth{
+	clear:both;
+}
+/*placeholders*/
+.productDivs{
+	float:left;
+	display:inline;
+	width:190px;
+	height:250px;
+	margin-left:15px;
+	margin-top:8px;
+	margin-bottom:8px;
+	border:1px solid #666;
+}
+#manufacturersContainer{
+	text-align:center;
+	float:left;
+	width: 100%;
+}
+#manufacturersContainer img{
+	float:left;
+	clear:left;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:5%;
+	width:90%;
+}
+.bestSellersDiv{
+	float:left;
+	clear:left;
+	width:90%;
+	margin-bottom:5px;
+	margin-top:5px;
+	margin-left:5%;
+	width:90%;
+	border:1px solid #666;
+	background-color:#EAEAEA;
+}
+.bestSellersDiv img{
+	width:90%;
+	max-width:300px;
+	margin-left:5%;
+}
+.bestSellersDiv p{
+	text-align:center;
+	width:100%;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.sectionImgs{
+	width:22%;
+	margin-left:2%;
+	margin-top:10px;
+	webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+.sectionImgs:hover{
+	box-shadow:#000 0em 0em 1.1em;
+}
+.lightGrayTitleBar{
+	width:100%;
+	line-height:40px;
+	background-color:#CCC;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size:16px;
+	color:#069;
+	padding-left:10px;
+	border:1px solid #666;	
+}
+.lightGrayTitleBar p{
+	line-height:40px;
+}
+.greenTitleText{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size:16px;
+	color:#090;
+}
+.customerPageBorder{
+	border:1px solid #CCC;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.customerPageBorderBg{
+	border:1px solid #CCC;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#EBEBEB;
+}
+
+input#SubmitLogin{
+	clear:right;
+	float:right;
+}
+input#SubmitCreate{
+	float:right;
+}
+p.lost_password{
+	float:right;
+}
+#cart_summary{
+	width:100%;	
+}
+ul.step{
+	list-style:none;
+	
+}
+
+li.step_current{
+	font-weight:bold;	
+}
+.cart_last_product{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+a.cart_last_product_img{
+	clear:both;	
+}
+a.cart_last_product_img img{
+	clear:both;	
+}
+
+p.warning{
+	font-weight:bold;
+}
+#featured-products_block_center img{
+	border:1px solid #666;
+}
+span.price{
+	color:#000;	
+}
+input#quantity_wanted{
+	display:inline;
+}
+.pText{
+	font-size:16px;	
+	font-weight:bold;
+}
+.submit2{
+	text-align:right;	
+}
+.cart_navigation submit{
+	float:right;
+}
+.carrier_title{
+	font-size:18px;
+	font-weight:bold;	
+}
+.condition_title{
+	font-size:18px;
+	font-weight:bold;	
+}
+a#title_block_footer_link{
+	color:#000;
+	font-size:14px;
+}
+
+/*placeholders*/
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   /*Added*/
+@media only screen and (max-width: 768px) {
+	.panelTopMenu #search{
+		clear:left;
+		width:74%;
+		margin-left:2%;
+	}
+	.panelTopMenu #submit{
+		width:20%;
+		margin-left:2%;
+	}
+
+	.panelTopMenu ul{
+		clear:left;
+		width:100%;
+		margin-left:0;
+		text-align:center;
+		border-top:1px solid #999;
+		border-left:1px solid #999;
+		border-right:1px solid #999;
+		background: #91bbe2; /* Old browsers */
+		background: -moz-linear-gradient(top, #91bbe2 1%, #256cc4 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#91bbe2), color-stop(100%,#256cc4)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #91bbe2 1%,#256cc4 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91bbe2', endColorstr='#256cc4',GradientType=0 ); /* IE6-9 */
+	}
+	.panelTopMenu li{
+		clear:left;
+		width:100%;
+		border-bottom:1px solid #000;
+	}
+	.panelTopBar ul{
+		width:100%;
+		height:122px;
+		text-align:center;
+		margin-right:0;
+		background: #91bbe2; /* Old browsers */
+		background: -moz-linear-gradient(top, #91bbe2 1%, #256cc4 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#91bbe2), color-stop(100%,#256cc4)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #91bbe2 1%,#256cc4 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91bbe2', endColorstr='#256cc4',GradientType=0 ); /* IE6-9 */
+	}
+	.panelTopBar ul li{
+		width:100%;
+		clear:left;
+		margin-left:0px;
+		border-bottom:1px solid #000;
+	}
+	.panelTopBar img {
+		display:none;	
+	}
+	.panelLogoImages{
+		display:none;
+	}
+	
+	.panelLogoImagesM{
+		display:block;
+		width:100%;
+		text-align:center;
+	}
+	.panelLogoImagesM img{
+		height:200px;
+		margin-bottom:5px;
+	}
+	.footerSections{
+		text-align:center;
+		width:100%;
+		margin-left:0px;
+		clear:left;
+		border-right:none;
+	}
+	.panelFooter{
+		height:430px;
+	}
+	.panelTopMenu ul li:hover ul{
+		display:none;
+	}
+	#manufacturersContainer img{
+		width:40%;
+		margin-left:30%
+	}	
+	.bestSellersDiv img{
+		width:50%;
+		margin-left:25%;
+	}
+	.panelSections{
+		display:none;
+	}
+	.panelSectionsM{
+		display:block;
+		margin-top:-12px;
+		margin-bottom:5px;
+	}
+	.sectionsM{
+		display:block;
+		min-height:60px;
+		height:auto;
+		margin-top:1px;
+		width:100%;
+		background: rgb(43,111,219); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(43,111,219,1) 0%, rgba(74,147,206,1) 50%, rgba(43,111,219,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,111,219,1)), color-stop(50%,rgba(74,147,206,1)), color-stop(100%,rgba(43,111,219,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(43,111,219,1) 0%,rgba(74,147,206,1) 50%,rgba(43,111,219,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(43,111,219,1) 0%,rgba(74,147,206,1) 50%,rgba(43,111,219,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(43,111,219,1) 0%,rgba(74,147,206,1) 50%,rgba(43,111,219,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(43,111,219,1) 0%,rgba(74,147,206,1) 50%,rgba(43,111,219,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b6fdb', endColorstr='#2b6fdb',GradientType=0 ); /* IE6-9 */
+		border-radius:7px;	
+		border:1px solid #666;
+	}
+	.sectionsM:hover{
+		background:#090;	
+	}
+	.sectionsM p.productsFor{
+		font-size:14px;
+		color:#FFF;
+		font-weight:bold;
+		text-align:center;
+	}
+	.sectionsM p.productsSection{
+		font-family: "Arial Black", Gadget, sans-serif;
+		color:#FFF;
+		font-size:22px;
+		text-align:center;
+		font-weight:bold;
+	}
+	.lightGrayTitleBar, #cart_summary, .cart_last_product, .step{
+		text-align:center;	
+	}
+	#desktopView{
+		display:none;	
+	}
+	#mobileView{
+		display:none;	
+	}
+}
+	
+}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

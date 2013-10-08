@@ -1,0 +1,16 @@
+body{
+	
+}
+.title_block{
+	background-image:url(img/titlebar.svg);
+	background-size:100% 100%;
+	color:#FFF;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	font-size:17px;
+	word-wrap:break-word;
+}
+.tree.dynamized li a{
+	color:#333;
+}

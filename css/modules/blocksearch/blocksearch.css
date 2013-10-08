@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+form#searchbox input#search_button{
+	padding: 1px 1px;
+	color:red;
+	}
+	#submit{
+		color:red;	
+	}

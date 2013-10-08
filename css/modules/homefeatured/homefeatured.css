@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+#featured-products_block_center li {
+	float:left;
+	list-style:none;
+	width:17%;
+	margin-top:15px;
+	margin-left: 15px;
+}
+p.s_title_block{
+	font-weight:bold;	
+	font-size:18px;
+}
+.product_desc{
+		font-size:14px;
+	}
+.product_desc a{
+	color:#000;	
+}
+
+@media only screen and (max-width: 768px) {
+	#featured-products_block_center li {
+		clear:left;
+		text-align:center;	
+		margin-left:10%;
+		margin-right:10%;
+		width:80%;
+	}
+	.product_desc{
+		width:100%;	
+	}
+	.product_desc a{
+		color:#000;	
+	}
+}
