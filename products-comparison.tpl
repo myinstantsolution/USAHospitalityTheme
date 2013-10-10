@@ -31,14 +31,13 @@
     {if $hasProduct}
     <div class="products_block">
         <table id="product_comparison">
-                <td width="20%" class="td_empty"></td>
+                <!--<td width="20%" class="td_empty"></td>-->
                 {assign var='taxes_behavior' value=false}
                 {if $use_taxes && (!$priceDisplay  || $priceDisplay == 2)}
                     {assign var='taxes_behavior' value=true}
                 {/if}
             {foreach from=$products item=product name=for_products}
                 {assign var='replace_id' value=$product->id|cat:'|'}
-    
                 <td width="{$width}%" class="ajax_block_product comparison_infos">
                     <a href="{$product->getLink()}" title="{$product->name|escape:html:'UTF-8'}" class="product_image" >
                         <img src="{$link->getImageLink($product->link_rewrite, $product->id_image, 'home_default')}" alt="{$product->name|escape:html:'UTF-8'}" width="{$homeSize.width}" height="{$homeSize.height}" />
@@ -97,12 +96,12 @@
                     </div>
                 </td>
             {/foreach}
-            </tr>
+            
     
             <tr class="comparison_header">
-                <td>
+                <!--<td>
                     {l s='Features:'}
-                </td>
+                </td>-->
                 {section loop=$products|count step=1 start=0 name=td}
                 <td></td>
                 {/section}
@@ -130,7 +129,7 @@
             {/foreach}
             {else}
                 <tr>
-                    <td></td>
+                    <!--<td></td>-->
                     <td colspan="{$products|@count + 1}">{l s='No features to compare'}</td>
                 </tr>
             {/if}

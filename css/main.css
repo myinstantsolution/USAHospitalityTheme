@@ -111,6 +111,7 @@ li{
 .panelLogoImages{
 	width:100%;
 	margin-top:-16px;
+	margin-bottom:-16px;
 	height:200px;
 	background-color:#FFF;
 }
@@ -551,6 +552,9 @@ a#title_block_footer_link{
 	color:#000;
 	font-size:14px;
 }
+#product_comparison tbody tr{
+	height:auto;	
+}
 
 /*placeholders*/
 
@@ -800,6 +804,11 @@ a#title_block_footer_link{
 		display:none;	
 	}
 	#mobileView{
+		display:none;	
+	}
+}
+@media only screen and (max-width: 500px) {
+	#compareDesktop{
 		display:none;	
 	}
 }
