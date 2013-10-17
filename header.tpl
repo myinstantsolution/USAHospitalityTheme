@@ -35,7 +35,8 @@
 {/if}
 {if isset($meta_keywords) AND $meta_keywords}
 		<meta name="keywords" content="{$meta_keywords|escape:html:'UTF-8'}" />
-{/if}
+{/if}	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 		<meta http-equiv="content-language" content="{$meta_language}" />
 		<meta name="generator" content="PrestaShop" />
@@ -106,12 +107,12 @@
             <div class="row">
 				<div class="large-16 small-16 columns">
 					<div class="panelLogoImages">
-						<a href="index.php"><img id="leftImg" src="{$img_dir}usa-logo.png" alt="" /></a>
+						<a href="index.php"><img id="leftImg" src="{$img_dir}usa-logo-large.png" alt="" /></a>
 						<img id="rightImg" src="{$img_dir}logoImg.jpg" alt="" />
 						<p id="rightImgText">Supplies for Lodging, Entertainment and Food Service</p>
 					</div>
 					<div class="panelLogoImagesM">
-						<a href="index.php"><img id="leftImgM" src="{$img_dir}/usa-logo.png" alt="" /></a>
+						<a href="index.php"><img id="leftImgM" src="{$img_dir}/usa-logo-large.png" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -119,7 +120,7 @@
 			<div class="row">
                 <div class="large-16 columns">
                         <div class="panelTopMenu">
-                        	<form method="get" action="http://localhost/prestashop/index.php?controller=search" id="searchbox">
+                        	<form method="get" action="index.php?controller=search" id="searchbox">
                                 <input type="hidden" name="controller" value="search">
                                 <input type="hidden" name="orderby" value="position">
                                 <input type="hidden" name="orderway" value="desc">

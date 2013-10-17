@@ -43,7 +43,7 @@
                         <img src="{$link->getImageLink($product->link_rewrite, $product->id_image, 'home_default')}" alt="{$product->name|escape:html:'UTF-8'}" width="{$homeSize.width}" height="{$homeSize.height}" />
                     </a>
                     <p class="s_title_block"><a href="{$product->getLink()}" title="{$product->name|truncate:32:'...'|escape:'htmlall':'UTF-8'}">{$product->name|truncate:27:'...'|escape:'htmlall':'UTF-8'}</a></p>
-                    <div class="product_desc"><a href="{$product->getLink()}">{$product->description_short|strip_tags|truncate:60:'...'}</a></div>
+                    <div class="product_desc"><a href="{$product->getLink()}">{$product->description_short|strip_tags|truncate:60:'...'}</a><div class="clearBoth"></div> <!--to make height: auto; work--></div>
                     <a class="lnk_more" href="{$product->getLink()}" title="{l s='View'}">{l s='View'}</a>
                     
                     <div class="comparison_product_infos">
@@ -52,9 +52,9 @@
                             <p class="price_container"><span class="price">{convertPrice price=$product->getPrice($taxes_behavior)}</span></p>
                             <div class="product_discount">
                             {if $product->on_sale}
-                                <span class="on_sale">{l s='On sale!'}</span>
+                                <!--<span class="on_sale">{l s='On sale!'}</span>-->
                             {elseif $product->specificPrice AND $product->specificPrice.reduction}
-                                <span class="discount">{l s='Reduced price!'}</span>
+                                <!--<span class="discount">{l s='Reduced price!'}</span>-->
                             {/if}
                             </div>
     

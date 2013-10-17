@@ -3,3 +3,60 @@
 .titleBar a{
 	color:#FFF;
 }
+
+#new-products_block_right{
+	margin-top:35px;	
+}
+#newProductsLoop{
+	float:left;
+	display:block;
+	list-style:none;
+	width:17%;
+	margin-top:10px;
+	margin-left: 15px;
+	height:auto;
+	min-height:380px;	
+}
+#newProductsLoop img{
+	border:1px solid #666;	
+}
+#newProductsLoop dt{
+	font-size:18px;
+	font-weight:bold;	
+}
+#newProductsLoop dd{
+	font-size:14px;
+}
+#newProductsLoop dd a.newProductDesc{
+	color:#000;
+}
+a.lnk_more{
+	font-size:16px;
+	color:#069;	
+}
+a.lnk_more:hover{
+	color:#09C;
+}
+#allNewProducts{
+	clear:both;
+	float:left;	
+}
+@media only screen and (max-width: 768px) {
+	#newProductsLoop {
+		clear:left;
+		text-align:center;	
+		margin-left:10%;
+		margin-right:10%;
+		width:80%;
+		min-height:230px;
+		height:auto;
+		border-bottom:1px solid #999;
+	}
+	#newProductsLoop:last-child{
+		border-bottom:none;	
+	}
+	#allNewProducts{
+		text-align:center;	
+		float:none;
+	}
+}

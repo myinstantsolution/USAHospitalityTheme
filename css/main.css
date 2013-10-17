@@ -121,6 +121,7 @@ li{
 .panelTopMenu{
 	width:100%;
 	margin-bottom:10px;
+	margin-top:-10px;
 	height:40px;
 	border-bottom:1px solid #999;
 	background: #91bbe2; /* Old browsers */
@@ -133,9 +134,13 @@ li{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91bbe2', endColorstr='#256cc4',GradientType=0 ); /* IE6-9 */
 }
 .panelSideMenu{
+	display:block;
 	width:100%;
 	background-color:#CCC;
-	margin-bottom:10px;
+}
+
+.panelSideMenuM{
+	display:none;
 }
 .panelCenterImg{
 	width:100%;
@@ -169,7 +174,6 @@ li{
 .panelManufacturers{
 	width:100%;
 	background-color:#ccc;
-	margin-bottom:10px;
 	border:1px solid #999;
 }
 .panelSections{
@@ -183,6 +187,7 @@ li{
 }
 .panelFooter{
 	width:100%;
+	margin-top:10px;
 	margin-bottom:10px;
 	height:180px;
 	border-top:1px solid #999;
@@ -501,7 +506,6 @@ p.lost_password{
 }
 ul.step{
 	list-style:none;
-	
 }
 
 li.step_current{
@@ -722,6 +726,24 @@ a#title_block_footer_link{
 	.panelTopBar img {
 		display:none;	
 	}
+	
+	.panelSideMenu{
+		display:none;
+	}
+	.panelSideMenuM{
+		display:block;
+		width:100%;
+		text-align:center;
+		float:left;
+	}
+	.panelSideMenuM select{
+		width:100%;
+		text-align:center;
+	}
+	.panelSideMenuM select option{
+		text-align:center;
+	}
+
 	.panelLogoImages{
 		display:none;
 	}
@@ -764,6 +786,7 @@ a#title_block_footer_link{
 		margin-top:-12px;
 		margin-bottom:5px;
 	}
+	
 	.sectionsM{
 		display:block;
 		min-height:60px;

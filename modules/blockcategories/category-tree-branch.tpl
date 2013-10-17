@@ -22,18 +22,38 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+<div class="panelSideMenu"> <!-- Desktop version (categories are a list) -->
+	<li {if isset($last) && $last == 'true'}class="last"{/if}>
+		<a href="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'}</a>
+		{*
+		{if $node.children|@count > 0}
+			<ul>
+			{foreach from=$node.children item=child name=categoryTreeBranch}
+				{if $smarty.foreach.categoryTreeBranch.last}
+					{include file="$branche_tpl_path" node=$child last='true'}
+				{else}
+					{include file="$branche_tpl_path" node=$child last='false'}
+				{/if}
+			{/foreach}
+			</ul>
+		{/if}
+		*}
+	</li>
+</div>
 
-<li {if isset($last) && $last == 'true'}class="last"{/if}>
-	<a href="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'}</a>
-	{if $node.children|@count > 0}
-		<ul>
-		{foreach from=$node.children item=child name=categoryTreeBranch}
-			{if $smarty.foreach.categoryTreeBranch.last}
-				{include file="$branche_tpl_path" node=$child last='true'}
-			{else}
-				{include file="$branche_tpl_path" node=$child last='false'}
-			{/if}
-		{/foreach}
-		</ul>
-	{/if}
-</li>
+<div class="panelSideMenuM"> <!-- Mobile version (categories are a select -> option drop down menu) -->
+	<option value="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'} {if isset($last) && $last == 'true'}{/if}
+		<!--<a href="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'}</a>-->
+		{*
+		{if $node.children|@count > 0}
+			{foreach from=$node.children item=child name=categoryTreeBranch}
+				{if $smarty.foreach.categoryTreeBranch.last}
+					{include file="$branche_tpl_path" node=$child last='true'}
+				{else}
+					{include file="$branche_tpl_path" node=$child last='false'}
+				{/if}
+			{/foreach}
+		{/if}
+		*}
+	</option>
+</div>

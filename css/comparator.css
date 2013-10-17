@@ -6,6 +6,7 @@ table#product_comparison {
 #product_comparison tr.comparison_header {font-weight:bold}
 #product_comparison td {
 	padding:6px;
+	height:auto;
 	border-top:1px solid #ccc;
 	border-left:1px solid #ccc;
 	border-right:1px solid #ccc;
@@ -24,6 +25,7 @@ table#product_comparison {
 }
 #product_comparison .product_image img {border:1px solid #ccc}
 #product_comparison .s_title_block {
+	float:left;
 	margin-bottom:10px;
 	font-size:12px;
 	color:#000;
@@ -31,11 +33,14 @@ table#product_comparison {
 	 padding-bottom: 0;
 }
 #product_comparison .product_desc {
+	clear:left;
+	float:left;
 	padding-bottom:5px;
-	height:40px;
-	color:#666
+	height:auto;
+	color:#000;
 }
 #product_comparison .lnk_more {
+	float:left;
 	display:block;
 	margin-bottom:10px;
 	padding-left:10px;
@@ -46,6 +51,8 @@ table#product_comparison {
 .prices_container {height:50px}
 .price_container {padding-bottom:10px}
 #product_comparison .price {
+	float:left;
+	width:100%;
 	font-weight:bold;
 	font-size:14px;
 	color:#990000
@@ -68,7 +75,7 @@ table#product_comparison {
 	padding-right:16px;
    font-weight:bold;
 	text-align:right;
-	background:url(../img/icon/delete.gif) no-repeat 100% 1px transparent;
+	/*background:url(../img/icon/delete.gif) no-repeat 100% 1px transparent;*/
 }
 
 .ajax_add_to_cart_button {
@@ -77,15 +84,23 @@ table#product_comparison {
 }
 .ajax_add_to_cart_button span {
    display: block;
-   position: absolute;
    top: -1px;
    height: 26px;
    left: -12px;
    width: 26px;
 	background: url(../img/icon/pict_add_cart.png) no-repeat 0 0 transparent
 }
-
-
+@media only screen and (max-width: 768px) {
+	#product_comparison td {
+		clear:left;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#product_comparison .cmp_remove {
+		clear:left;
+		text-align:left;
+	}
+}
 
 
 

@@ -32,6 +32,14 @@
 								</ul>
                                
 							</div>
+							<div class="panelSideMenuM">
+								
+								
+								
+                                    {$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in the usahospitalitytheme/css/modules/blockcategories -->
+								
+                                    <!--This includes the left categories menu. Some CSS styling in the usahospitalitytheme/css/modules/blockcategories -->
+							</div>
 						</div>
                    <div class="large-10 small-16 columns" id="container">
 						

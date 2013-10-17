@@ -259,6 +259,7 @@ $(document).ready(function() {
 						{/foreach}
 					</select>
 				</p>
+                <!--
 				{if isset($newsletter) && $newsletter}
 					<p class="checkbox">
 						<input type="checkbox" name="newsletter" id="newsletter" value="1" {if isset($smarty.post.newsletter) && $smarty.post.newsletter == '1'}checked="checked"{/if} />
@@ -269,6 +270,7 @@ $(document).ready(function() {
 						<label for="optin">{l s='Receive special offers from our partners!'}</label>
 					</p>
 				{/if}
+                -->
 				<h3>{l s='Delivery address'}</h3>
 				{foreach from=$dlv_all_fields item=field_name}
 					{if $field_name eq "company"}
@@ -438,6 +440,7 @@ $(document).ready(function() {
 				{/foreach}
 			</select>
 		</p>
+        <!--
 		{if $newsletter}
 		<p class="checkbox" >
 			<input type="checkbox" name="newsletter" id="newsletter" value="1" {if isset($smarty.post.newsletter) AND $smarty.post.newsletter == 1} checked="checked"{/if} />
@@ -448,6 +451,7 @@ $(document).ready(function() {
 			<label for="optin">{l s='Receive special offers from our partners!'}</label>
 		</p>
 		{/if}
+        -->
 	</fieldset>
 	{if $b2b_enable}
 	<fieldset class="account_creation">

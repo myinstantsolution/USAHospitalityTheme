@@ -24,25 +24,54 @@
 *}
 
 <!-- Block categories module -->
-<div id="categories_block_left" class="block">
-	<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
-	<div class="block_content">
-		<ul class="tree {if $isDhtml}dhtml{/if}">
-		{foreach from=$blockCategTree.children item=child name=blockCategTree}
-			{if $smarty.foreach.blockCategTree.last}
-				{include file="$branche_tpl_path" node=$child last='true'}
-			{else}
-				{include file="$branche_tpl_path" node=$child}
-			{/if}
-		{/foreach}
-		</ul>
-		{* Javascript moved here to fix bug #PSCFI-151 *}
-		<script type="text/javascript">
-		// <![CDATA[
-			// we hide the tree only if JavaScript is activated
-			$('div#categories_block_left ul.dhtml').hide();
-		// ]]>
-		</script>
+<div class="panelSideMenu"> <!-- Desktop version (categories are a list) -->
+	<div id="categories_block_left" class="block">
+		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
+		<div class="block_content">
+			<ul class="tree {if $isDhtml}dhtml{/if}">
+			{foreach from=$blockCategTree.children item=child name=blockCategTree}
+				{if $smarty.foreach.blockCategTree.last}
+					{include file="$branche_tpl_path" node=$child last='true'}
+				{else}
+					{include file="$branche_tpl_path" node=$child}
+				{/if}
+			{/foreach}
+			</ul>
+			
+			{* Javascript moved here to fix bug #PSCFI-151 *}
+			<script type="text/javascript">
+			// <![CDATA[
+				// we hide the tree only if JavaScript is activated
+				$('div#categories_block_left ul.dhtml').hide();
+			// ]]>
+			</script>
+		</div>
+	</div>
+</div>
+
+<div class="panelSideMenuM"> <!-- Mobile version (categories are a select -> option drop down menu) -->
+	<div id="categories_block_left" class="block">
+		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
+		<div class="block_content">
+			<select onChange="window.location.href=this.value" class="tree {if $isDhtml}dhtml{/if}">
+			<option value="">Please select a category below:</option>
+			{foreach from=$blockCategTree.children item=child name=blockCategTree}
+				{if $smarty.foreach.blockCategTree.last}
+					{include file="$branche_tpl_path" node=$child last='true'}
+				{else}
+					{include file="$branche_tpl_path" node=$child}
+				{/if}
+			{/foreach}
+			</select>
+			
+			{* Javascript moved here to fix bug #PSCFI-151 *}
+			<script type="text/javascript">
+			// <![CDATA[
+				// we hide the tree only if JavaScript is activated
+				$('div#categories_block_left ul.dhtml').hide();
+			// ]]>
+			</script>
+		</div>
 	</div>
 </div>
 <!-- /Block categories module -->
