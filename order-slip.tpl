@@ -27,7 +27,7 @@
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='CREDIT SLIPS'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     <p>{l s='Credit slips you have received after cancelled orders'}.</p>
     <div class="block-center" id="block-history">
         {if $ordersSlip && count($ordersSlip)}

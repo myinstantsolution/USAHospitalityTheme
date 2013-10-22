@@ -27,7 +27,7 @@
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='FORGOT YOUR PASSWORD?'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     {include file="$tpl_dir./errors.tpl"}
     
     {if isset($confirmation) && $confirmation == 1}

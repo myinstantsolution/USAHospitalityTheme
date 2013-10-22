@@ -157,7 +157,7 @@ var fieldRequired = '{l s='Please fill in all the required fields before saving 
 </script>
 
 {include file="$tpl_dir./breadcrumb.tpl"}
-<div class="customerPageBorderBg">
+<div class="customPageBg">
 <div id="primary_block" class="clearfix">
 
 	{if isset($adminActionDisplay) && $adminActionDisplay}

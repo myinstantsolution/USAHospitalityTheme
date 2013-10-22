@@ -36,11 +36,10 @@
 				{/if}
 			{/strip}
 		</h1>
-		<div class="customerPageBorderBg">
+		<div class="customPageBg">
         
 			{*
             {if $scenes || $category->description || $category->id_image}
-			
 			Takes away the div that shows the category name twice
 			<div class="content_scene_cat">
 				{if $scenes}
@@ -67,8 +66,8 @@
 					</div>
 				{/if}
 			</div>
-			
 			{/if} *}
+			
 			{if isset($subcategories)}
 			<!-- Subcategories -->
 			<div id="subcategories">

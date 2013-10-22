@@ -24,7 +24,7 @@
 *}
 <div class="pagenotfound">
 	<h1 class="titleBar">{l s='THIS PAGE IS NOT AVAILABLE'}</h1>
-	<div class="customerPageBorderBg">
+	<div class="customPageBg">
 		<p>
 			{l s='We\'re sorry, but the Web address you\'ve entered is no longer available.'}
 		</p>

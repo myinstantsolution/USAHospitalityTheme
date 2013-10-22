@@ -163,7 +163,7 @@
 {/if}
 
 {if !$opc}<h1 class="titleBar">{l s='ADDRESSES'}</h1>{else}<h2><span>1</span> {l s='Addresses'}</h2>{/if}
-<div class="customerPageBorderBg">
+<div class="customPageBg">
 
     {if !$opc}
         {assign var='current_step' value='address'}

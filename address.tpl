@@ -68,7 +68,7 @@ $(function(){ldelim}
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='Your addresses'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
 
     <h3 class="pText">
     {if isset($id_address) && (isset($smarty.post.alias) || isset($address->alias))}

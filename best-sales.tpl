@@ -27,7 +27,7 @@
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="lightGrayTitleBar">{l s='TOP SELLERS'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     {if $products}
         <div class="content_sortPagiBar">
             {include file="$tpl_dir./pagination.tpl"}

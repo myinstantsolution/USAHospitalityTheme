@@ -57,9 +57,9 @@
 			<option value="">Please select a category below:</option>
 			{foreach from=$blockCategTree.children item=child name=blockCategTree}
 				{if $smarty.foreach.blockCategTree.last}
-					{include file="$branche_tpl_path" node=$child last='true'}
+					{include file="$branche_tpl_pathM" node=$child last='true'}
 				{else}
-					{include file="$branche_tpl_path" node=$child}
+					{include file="$branche_tpl_pathM" node=$child}
 				{/if}
 			{/foreach}
 			</select>

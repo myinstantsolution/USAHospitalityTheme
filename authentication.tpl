@@ -152,7 +152,7 @@ $(document).ready(function() {
 	<form action="{$link->getPageLink('authentication', true)}" method="post" id="create-account_form" class="std">
 		<fieldset>
         	<h2 class="lightGrayTitleBar">{l s='NEW CUSTOMER?'}</h2>
-            <div class="customerPageBorder">
+            <div class="customPageBorder">
                 <h3 class="greenTitleText">{l s='CREATE AN ACCOUNT'}</h3>
                 <div class="form_content clearfix">
                     <p class="title_block_auth">{l s='Please enter your email address to create an account'}.</p>
@@ -174,7 +174,7 @@ $(document).ready(function() {
 	<form action="{$link->getPageLink('authentication', true)}" method="post" id="login_form" class="std">
 		<fieldset>
 			<h2 class="lightGrayTitleBar">{l s='RETURNING CUSTOMERS?'}</h2>
-            <div class="customerPageBorder">
+            <div class="customPageBorder">
             	<h3 class="greenTitleText">{l s='LOG IN:'}</h3>
                 <div class="form_content clearfix">
                     <p class="text">
@@ -401,9 +401,9 @@ $(document).ready(function() {
 			<input type="text" class="text" id="email" name="email" value="{if isset($smarty.post.email)}{$smarty.post.email}{/if}" />
 		</p>
 		<p class="required password">
-			<label for="passwd">{l s='Password'} <sup>*</sup></label>
+			<label for="passwd">{l s='Password (5 characters minimum)'} <sup>*</sup></label>
 			<input type="password" class="text" name="passwd" id="passwd" />
-			<span class="form_info">{l s='(Five characters minimum)'}</span>
+			<!--hidden <span class="form_info">{l s='(Five characters minimum)'}</span> -->
 		</p>
 		<p class="select">
 			<span>{l s='Date of Birth'}</span>

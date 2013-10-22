@@ -40,7 +40,7 @@
 {/if}
 
 {if !$opc}<h1 class="titleBar">{l s='PLEASE CHOOSE YOUR PAYMENT METHOD'}</h1>{else}<h2><span>3</span> {l s='Please choose your payment method'}</h2>{/if}
-<div class="customerPageBorder">
+<div class="customPageBorder">
     {if !$opc}
         {assign var='current_step' value='payment'}
         {include file="$tpl_dir./order-steps.tpl"}

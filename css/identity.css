@@ -25,7 +25,7 @@
 	width:174px;/* 184 */
 	font-weight:bold;
 	font-size:12px;
-	text-align:right;
+	text-align:left;
 }
 #identity .std p.text label sup,
 #identity .std p.password label sup,

@@ -34,7 +34,7 @@
 {/if}
 {assign var='current_step' value='summary'}
 <h2 class="lightGrayTitleBar">{l s='STEPS'}</h2>
-<div class="customerPageBorder">
+<div class="customPageBorder">
     {include file="$tpl_dir./order-steps.tpl"}
     {include file="$tpl_dir./errors.tpl"}
 </div>
@@ -60,7 +60,7 @@
 	
 	<div class="cart_last_product">
 		<div class="lightGrayTitleBar">{l s='LAST PRODUCT ADDED'}</div>
-        <div class="customerPageBorder">
+        <div class="customPageBorder">
 		<a  class="cart_last_product_img" href="{$link->getProductLink($lastProductAdded.id_product, $lastProductAdded.link_rewrite, $lastProductAdded.category, null, null, $lastProductAdded.id_shop)|escape:'htmlall':'UTF-8'}"><img src="{$link->getImageLink($lastProductAdded.link_rewrite, $lastProductAdded.id_image, 'small_default')}" alt="{$lastProductAdded.name|escape:'htmlall':'UTF-8'}"/></a>
 		<div class="cart_last_product_content">
 			<p class="s_title_block"><a href="{$link->getProductLink($lastProductAdded.id_product, $lastProductAdded.link_rewrite, $lastProductAdded.category, null, null, null, $lastProductAdded.id_product_attribute)|escape:'htmlall':'UTF-8'}">{$lastProductAdded.name|escape:'htmlall':'UTF-8'}</a></p>

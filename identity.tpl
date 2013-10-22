@@ -27,7 +27,7 @@
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='YOUR PERSONAL INFORMATION'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     {include file="$tpl_dir./errors.tpl"}
     
     {if isset($confirmation) && $confirmation}

@@ -90,7 +90,7 @@
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='MY ADDRESSES'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     <p>{l s='Please configure your default billing and delivery addresses when placing an order. You may also add additional addresses, which can be useful for sending gifts or receiving an order at your office.'}</p>
     
     {if isset($multipleAddresses) && $multipleAddresses}

@@ -27,7 +27,7 @@
 {include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='MY ACCOUNT'}</h1>
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     {if isset($account_created)}
         <p class="success">
             {l s='Your account has been created.'}

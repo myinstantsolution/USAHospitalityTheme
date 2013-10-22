@@ -84,7 +84,7 @@
 {else}
 	<h2 class="titleBar"><span>2</span> {l s='DELIVERY METHODS'}</h2>
 {/if}
-<div class="customerPageBorderBg">
+<div class="customPageBg">
     {if !$opc}
         {assign var='current_step' value='shipping'}
         {include file="$tpl_dir./order-steps.tpl"}

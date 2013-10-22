@@ -23,15 +23,18 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-		{if !$content_only}
-			<div class="row">
-				{*{if $page_name != 'index'}{/if}*}
-				
-				<div class="large-3 small-16 columns">
-					{$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in USAHospitalityTheme/css/modules/blockcategories -->
-				</div>
-				
-            <div class="large-10 small-16 columns" id="container">		
+ <!-- Mobile version (categories are a select -> option drop down menu) -->
+	<option value="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'} {if isset($last) && $last == 'true'}{/if}
+		<!--<a href="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'}</a>-->
+		{*
+		{if $node.children|@count > 0}
+			{foreach from=$node.children item=child name=categoryTreeBranch}
+				{if $smarty.foreach.categoryTreeBranch.last}
+					{include file="$branche_tpl_path" node=$child last='true'}
+				{else}
+					{include file="$branche_tpl_path" node=$child last='false'}
+				{/if}
+			{/foreach}
 		{/if}
-	</body>
-</html>
+		*}
+	</option>
