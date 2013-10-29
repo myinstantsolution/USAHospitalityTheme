@@ -26,6 +26,8 @@
 		{if !$content_only}		
         		</div>			
                     <div class="large-3 small-16 columns">
+							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
+							{if $page_name != 'cms'}
 								<div class="panelBestSellers">
 									<!--<p class="titleBar">BEST SELLERS</p>
 									<div class="bestSellersDiv">
@@ -44,8 +46,7 @@
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
                                     {$HOOK_RIGHT_COLUMN}
 								</div>
-								
-							
+
 								<div class="panelManufacturers">
 									<p class="titleBar">MANUFACTURERS</p>
 									<div id="manufacturersContainer">
@@ -57,6 +58,31 @@
 									</div>
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
 								</div>
-						</div>
+							{else}
+								<div class="panelNews">
+									<p class="titleBar">NEWS</p>
+									<div id="newsContainer">
+										News!
+										<br />
+										News!
+										<br />
+										News!
+										<br />
+										News!
+										<br />
+										News!
+										<br />
+										News!
+										<br />
+										News!
+										<br />
+										News!
+										<br />
+										
+									</div>
+									<div class="clearBoth"></div> <!--to make height: auto; work-->
+								</div>
+							{/if}
 					</div>
+				</div>
          {/if}

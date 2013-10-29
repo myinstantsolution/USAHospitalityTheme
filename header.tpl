@@ -137,7 +137,7 @@
                                         <li>Item5</li>	
                                     </ul>
                                 </li></a>
-                                <a href="cms.php"><li>Company</li></a>
+                                <a href="http://myinstantsolution.com/testing/prestashop/index.php?id_cms_category=2&controller=cms"><li>Company</li></a>
                                 <a href="cms.php"><li>Education</li></a>
                                 <a href="cms.php"><li>Investors</li></a>
                                 <a href="cms.php"><li>Divisions</li></a>

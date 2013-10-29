@@ -25,13 +25,16 @@
 
 		{if !$content_only}
 			<div class="row">
-				{*{if $page_name != 'index'}{/if}*}
-				
-				<div class="large-3 small-16 columns">
-					{$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in USAHospitalityTheme/css/modules/blockcategories -->
-				</div>
-				
-            <div class="large-10 small-16 columns" id="container">		
+				{if $page_name != 'cms'}
+					<div class="large-3 small-16 columns">
+						{$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in USAHospitalityTheme/css/modules/blockcategories -->
+					</div>
+					<div class="large-10 small-16 columns" id="container">	
+				{else}
+				<div class="large-13 small-16 columns" id="container">
+				{$HOOK_LEFT_COLUMN}				
+				{/if}
+            	
 		{/if}
 	</body>
 </html>

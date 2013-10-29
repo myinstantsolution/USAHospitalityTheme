@@ -22,9 +22,13 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+
+{*
 {if ($content_only == 0)}
 	{include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
+*}
+
 {if isset($cms) && !isset($cms_category)}
 	{if !$cms->active}
 		<br />
@@ -44,7 +48,29 @@
 	</div>
 {elseif isset($cms_category)}
 	<div class="block-cms">
-		<h1><a href="{if $cms_category->id eq 1}{$base_dir}{else}{$link->getCMSCategoryLink($cms_category->id, $cms_category->link_rewrite)}{/if}">{$cms_category->name|escape:'htmlall':'UTF-8'}</a></h1>
+		{*<h1><a href="{if $cms_category->id eq 1}{$base_dir}{else}{$link->getCMSCategoryLink($cms_category->id, $cms_category->link_rewrite)}{/if}">{$cms_category->name|escape:'htmlall':'UTF-8'}</a></h1>*}
+		
+		<div class="col5first">5</div>
+		<div class="col5">5</div>
+		<div class="col5">5</div>
+		<div class="col5">5</div>
+		<div class="col5">5</div>
+		
+		<div class="col4first">4</div>
+		<div class="col4">4</div>
+		<div class="col4">4</div>
+		<div class="col4">4</div>
+		
+		<div class="col3first">3</div>
+		<div class="col3">3</div>
+		<div class="col3">3</div>
+		
+		<div class="col2first">2</div>
+		<div class="col2">2</div>
+		
+		<div class="col1">1</div>
+		
+		
 		{if isset($sub_category) & !empty($sub_category)}	
 			<p class="title_block">{l s='List of sub categories in %s:' sprintf=$cms_category->name}</p>
 			<ul class="bullet">

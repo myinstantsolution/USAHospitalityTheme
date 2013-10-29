@@ -24,6 +24,7 @@
 *}
 
 <!-- Block categories module -->
+{if $page_name != 'cms'}
 <div class="panelSideMenu"> <!-- Desktop version (categories are a list) -->
 	<div id="categories_block_left" class="block">
 		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
@@ -74,4 +75,31 @@
 		</div>
 	</div>
 </div>
-<!-- /Block categories module -->
+{else}
+<!-- Mobile version (categories are a select -> option drop down menu) -->
+	<div id="cmsMenu" class="block">
+		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
+		<div class="block_content">
+			<select onChange="window.location.href=this.value" class="tree {if $isDhtml}dhtml{/if}">
+			<option value="">Please select a category below:</option>
+			{foreach from=$blockCategTree.children item=child name=blockCategTree}
+				{if $smarty.foreach.blockCategTree.last}
+					{include file="$branche_tpl_pathM" node=$child last='true'}
+				{else}
+					{include file="$branche_tpl_pathM" node=$child}
+				{/if}
+			{/foreach}
+			</select>
+			
+			{* Javascript moved here to fix bug #PSCFI-151 *}
+			<script type="text/javascript">
+			// <![CDATA[
+				// we hide the tree only if JavaScript is activated
+				$('div#categories_block_left ul.dhtml').hide();
+			// ]]>
+			</script>
+		</div>
+	</div>
+{/if}
+
+

@@ -176,6 +176,11 @@ li{
 	background-color:#ccc;
 	border:1px solid #999;
 }
+.panelNews{
+	width:100%;
+	background-color:#ccc;
+	border:1px solid #999;
+}
 .panelSections{
 	width:100%;
 	background-color:#FFF;
@@ -416,6 +421,11 @@ li{
 	float:left;
 	width: 100%;
 }
+#newsContainer{
+	text-align:center;
+	float:left;
+	width: 100%;
+}
 #manufacturersContainer img{
 	float:left;
 	clear:left;
@@ -559,6 +569,29 @@ a#title_block_footer_link{
 #product_comparison tbody tr{
 	height:auto;	
 }
+#cmsMenu{
+	width:200px;
+}
+
+.col4, .col4first, .col3, .col3first, .col2, .col2first, .col1{
+	display:none;
+}
+.col5{
+	display:block;
+	float:left;
+	margin-left:2%;
+	width:18%;
+	height:400px;
+	background-color:#CCC;
+}
+.col5first{
+	display:block;
+	margin-left:0;
+	float:left;
+	width:18%;
+	height:400px;
+	background-color:#CCC;
+}
 
 /*placeholders*/
 
@@ -670,6 +703,74 @@ a#title_block_footer_link{
    Modify as content requires.
    ========================================================================== */
    /*Added*/
+
+@media only screen and (max-width: 1600px) {
+	.col5, .col5first, .col3, .col3first, .col2, .col2first, .col1{
+		display:none;
+	}
+   .col4{
+		display:block;
+		float:left;
+		margin-left:2%;
+		width:23%;
+		height:400px;
+		background-color:#CCC;
+	}
+	.col4first{
+		display:block;
+		margin-left:0;
+		float:left;
+		width:23%;
+		height:400px;
+		background-color:#CCC;
+	}
+}
+   
+@media only screen and (max-width: 1200px) {
+	.col4, .col4first, .col5, .col5first, .col2, .col2first, .col1{
+		display:none;
+	}
+   .col3{
+		display:block;
+		float:left;
+		margin-left:2%;
+		width:32%;
+		height:400px;
+		background-color:#CCC;
+	}
+	.col3first{
+		display:block;
+		margin-left:0;
+		float:left;
+		width:32%;
+		height:400px;
+		background-color:#CCC;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.col4, .col4first, .col5, .col5first, .col3, .col3first, .col1{
+		display:none;
+	}
+	.col2{
+		display:block;
+		float:left;
+		margin-left:2%;
+		width:49%;
+		height:400px;
+		background-color:#CCC;
+	}
+	.col2first{
+		display:block;
+		margin-left:0;
+		float:left;
+		width:49%;
+		height:400px;
+		background-color:#CCC;
+	}
+		
+}
+   
+   
 @media only screen and (max-width: 768px) {
 	.panelTopMenu #search{
 		clear:left;
@@ -829,6 +930,24 @@ a#title_block_footer_link{
 	#mobileView{
 		display:none;	
 	}
+	#cmsMenu{
+		width:100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.col4, .col4first, .col5, .col5first, .col3, .col3first, .col2, .col2first{
+		display:none;
+	}
+	.col1{
+		display:block;
+		float:left;
+		margin-left:2%;
+		width:96%;
+		height:400px;
+		background-color:#CCC;
+	}
+		
 }
 @media only screen and (max-width: 500px) {
 	#compareDesktop{
