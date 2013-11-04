@@ -1,6 +1,6 @@
 meta.foundation-mq-small {
-  font-family: "only screen and (min-width: 768px)";
-  width: 768px; }
+  font-family: "only screen and (min-width: 780px)";/*was 768*/
+  width: 780px; }/*was 768*/
 
 meta.foundation-mq-medium {
   font-family: "only screen and (min-width:1280px)";
@@ -292,7 +292,7 @@ select {
     margin-right: auto;
     float: none !important; } }
 /* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .large-1 {
     position: relative;
     width: 6.25%; }
@@ -637,7 +637,7 @@ th.hide-for-xlarge {
   display: table-cell !important; }
 
 /* Medium Displays: 768px - 1279px */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .show-for-medium,
   .show-for-medium-up {
     display: inherit !important; }
@@ -984,7 +984,7 @@ th.hide-for-touch {
     .small-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
 /* Foundation Block Grids for above small breakpoint */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   /* Remove small grid clearing */
   .small-block-grid-1 > li:nth-of-type(1n+1) {
     clear: none; }
@@ -1335,7 +1335,7 @@ blockquote p {
   border: none;
   padding: 0 0.0625em; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
 
@@ -1588,7 +1588,7 @@ button, .button {
     button.round, .button.round {
       -webkit-border-radius: 1000px;
       border-radius: 1000px; } }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   button, .button {
     display: inline-block; } }
 /* Standard Forms */
@@ -2589,7 +2589,7 @@ label.error {
   .section-container.tabs > section.active > .title, .section-container.tabs > .section.active > .title {
     border-bottom: 0; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   [data-section=''], [data-section='auto'], .section-container.auto {
     width: 100%;
     position: relative;
@@ -3477,13 +3477,13 @@ label.error {
 .touch .orbit-bullets {
   display: none; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit; }
   .touch .orbit-bullets {
     display: block; } }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {/*was 768*/
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important; }
   .orbit-stack-on-small .orbit-slides-container > * {
@@ -3537,7 +3537,7 @@ label.error {
     font-weight: bold;
     cursor: pointer; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .reveal-modal {
     padding: 1.875em;
     top: 6.25em; }
@@ -3687,7 +3687,7 @@ label.error {
   left: 0; }
 
 /* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .joyride-tip-guide {
     width: 300px;
     left: inherit; }
@@ -3790,7 +3790,7 @@ label.error {
   .clearing-feature li.clearing-featured-img {
     display: block; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .clearing-main-prev,
   .clearing-main-next {
     position: absolute;
@@ -4718,7 +4718,7 @@ a.th {
   color: #888888;
   font-weight: normal; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 781px) {/*was 768*/
   .tooltip > .nub {
     border-color: transparent transparent black transparent;
     top: -10px; }
@@ -4740,7 +4740,7 @@ a.th {
     left: -10px;
     top: 50%;
     margin-top: -5px; } }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {/*was 768*/
   .f-dropdown {
     max-width: 100%;
     left: 0; } }

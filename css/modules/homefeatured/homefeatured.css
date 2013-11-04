@@ -3,6 +3,8 @@
 
 #featured-products_block_center{
 	height:auto;	
+	background-color:#CCC;
+	border:1px solid #999;
 }
 #featured-products_block_center li {
 	float:left;

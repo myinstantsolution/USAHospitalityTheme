@@ -4,3 +4,25 @@
 #cms #center_column dl { margin-left:25px; margin-bottom:20px }
 
 #cms #center_column li { margin-bottom:5px }
+
+#landingOptionsBody{
+	background-color:#CCC;
+	border:1px solid #999;
+	height:auto; /*for now*/	
+}
+.landingOptionsSmallFirst{
+	float:left;
+	height:120px;
+	width:16%;
+	margin-left:4%;
+	background-color:#FFF;
+	border:1px solid #000;	
+}
+.landingOptionsSmall{
+	float:left;
+	height:120px;
+	width:16%;
+	margin-left:3%;
+	background-color:#FFF;
+	border:1px solid #000;	
+}

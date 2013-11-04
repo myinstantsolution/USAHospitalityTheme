@@ -52,5 +52,6 @@
 		<p>&raquo; {l s='No new products at this time' mod='blocknewproducts'}</p>
 	{/if}
 	</div>
+	<div class="clearBoth"></div> <!--to make height: auto; work-->
 </div>
 <!-- /MODULE Block new products -->

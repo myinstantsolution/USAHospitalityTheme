@@ -27,7 +27,7 @@
         		</div>			
                     <div class="large-3 small-16 columns">
 							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
-							{if $page_name != 'cms'}
+							{if $page_name != 'cms' || Tools::getValue('id_cms') == 12}
 								<div class="panelBestSellers">
 									<!--<p class="titleBar">BEST SELLERS</p>
 									<div class="bestSellersDiv">

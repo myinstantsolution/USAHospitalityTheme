@@ -572,7 +572,17 @@ a#title_block_footer_link{
 #cmsMenu{
 	width:200px;
 }
-
+.col5, .col5first, .col4, .col4first, .col3, .col3first, .col2, .col2first, .col1{
+	webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+	border-radius:6px;
+}
+.col5:hover, .col5first:hover, .col4:hover, .col4first:hover, .col3:hover, .col3first:hover, .col2:hover, .col2first:hover, .col1:hover{
+	box-shadow:#000 0em 0em 1.1em;	
+}
 .col4, .col4first, .col3, .col3first, .col2, .col2first, .col1{
 	display:none;
 }
@@ -581,16 +591,16 @@ a#title_block_footer_link{
 	float:left;
 	margin-left:2%;
 	width:18%;
-	height:400px;
-	background-color:#CCC;
+	height:520px;
+	background-color:#FFF;
 }
 .col5first{
 	display:block;
 	margin-left:0;
 	float:left;
 	width:18%;
-	height:400px;
-	background-color:#CCC;
+	height:520px;
+	background-color:#FFF;
 }
 
 /*placeholders*/
@@ -713,16 +723,16 @@ a#title_block_footer_link{
 		float:left;
 		margin-left:2%;
 		width:23%;
-		height:400px;
-		background-color:#CCC;
+		height:520px;
+		background-color:#FFF;
 	}
 	.col4first{
 		display:block;
 		margin-left:0;
 		float:left;
 		width:23%;
-		height:400px;
-		background-color:#CCC;
+		height:520px;
+		background-color:#FFF;
 	}
 }
    
@@ -735,16 +745,16 @@ a#title_block_footer_link{
 		float:left;
 		margin-left:2%;
 		width:32%;
-		height:400px;
-		background-color:#CCC;
+		height:520px;
+		background-color:#FFF;
 	}
 	.col3first{
 		display:block;
 		margin-left:0;
 		float:left;
 		width:32%;
-		height:400px;
-		background-color:#CCC;
+		height:520px;
+		background-color:#FFF;
 	}
 }
 @media only screen and (max-width: 960px) {
@@ -756,22 +766,22 @@ a#title_block_footer_link{
 		float:left;
 		margin-left:2%;
 		width:49%;
-		height:400px;
-		background-color:#CCC;
+		height:520px;
+		background-color:#FFF;
 	}
 	.col2first{
 		display:block;
 		margin-left:0;
 		float:left;
 		width:49%;
-		height:400px;
-		background-color:#CCC;
+		height:520px;
+		background-color:#FFF;
 	}
 		
 }
    
    
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) { /*was 768*/
 	.panelTopMenu #search{
 		clear:left;
 		width:74%;
@@ -857,6 +867,9 @@ a#title_block_footer_link{
 	.panelLogoImagesM img{
 		height:200px;
 		margin-bottom:5px;
+	}
+	.panelNews{
+		margin-top:15px;
 	}
 	.footerSections{
 		text-align:center;
