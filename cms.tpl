@@ -23,11 +23,10 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-{*
+
 {if ($content_only == 0)}
 	{include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
-*}
 
 {if isset($cms) && !isset($cms_category)}
 	{if !$cms->active}

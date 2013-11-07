@@ -362,6 +362,7 @@ span.view_scroll_spacer {
  
     .content_prices #add_to_cart .exclusive,.content_prices #add_to_cart .exclusive_disabled {
 		padding:6px 7px 4px 15px;
+		color:#6d6e71;
 	}
 
 }

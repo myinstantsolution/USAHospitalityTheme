@@ -24,9 +24,8 @@
 *}
 
 {capture name=path}{l s='Your shopping cart'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 <p class="titleBar">{l s='SHOPPING CART SUMMARY'}</p>
-
+{include file="$tpl_dir./breadcrumb.tpl"}
 {if isset($account_created)}
 	<p class="success">
 		{l s='Your account has been created.'}

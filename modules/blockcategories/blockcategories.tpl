@@ -55,7 +55,7 @@
 		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
 		<div class="block_content">
 			<select onChange="window.location.href=this.value" class="tree {if $isDhtml}dhtml{/if}">
-			<option value="">Please select a category below:</option>
+			<option value="">Select a category:</option>
 			{foreach from=$blockCategTree.children item=child name=blockCategTree}
 				{if $smarty.foreach.blockCategTree.last}
 					{include file="$branche_tpl_pathM" node=$child last='true'}
@@ -81,7 +81,7 @@
 		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
 		<div class="block_content">
 			<select onChange="window.location.href=this.value" class="tree {if $isDhtml}dhtml{/if}">
-			<option value="">Please select a category below:</option>
+			<option value="">Select a category:</option>
 			{foreach from=$blockCategTree.children item=child name=blockCategTree}
 				{if $smarty.foreach.blockCategTree.last}
 					{include file="$branche_tpl_pathM" node=$child last='true'}

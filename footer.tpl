@@ -32,7 +32,7 @@
 					<div class="panelFooter">
                         <div class="footerSections">
                         
-                        	<img src="{$img_dir}m2.png" alt="" />
+                        	<img src="{$img_dir}footerImg.png" alt="" />
                         </div>
 						<!--
                         <div class="footerSections">

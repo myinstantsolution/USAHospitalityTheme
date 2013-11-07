@@ -3,9 +3,9 @@
 .myaccount li a {
    display: block;
    text-align:center;
-   color: #069;
+   color:#1276b8;
    background: none;
 }
 .myaccount li a:hover{
-	color:#09C;
+	/*color:#09C;*/
 }

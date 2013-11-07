@@ -2,8 +2,9 @@ div.addresses {
    position:relative;
    padding:15px;
    border:1px solid #ccc;
-	font-size:12px;
-   background:#f8f8f8
+   font-size:12px;
+   background:#f8f8f8;
+   border-radius:5px;
 }
 
 ul.address {
@@ -93,7 +94,7 @@ p.address_delivery, p.addressesAreEquals {
    color:#fff;
     text-shadow:0 1px 0 #666;
 	width:100%;
-   background:url(../img/bg_table_th.png) repeat-x 0 -10px #999
+   background:url(../img/bg_table_th.png) repeat-x 0 -10px #6d6e71
 }
 .addresses ul.address .address_update {margin-top:20px}
 .addresses ul.address .address_update,

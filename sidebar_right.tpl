@@ -25,7 +25,7 @@
 
 		{if !$content_only}		
         		</div>			
-                    <div class="large-3 small-16 columns">
+                    <div class="large-2 small-16 columns">
 							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
 							{if $page_name != 'cms' || Tools::getValue('id_cms') == 12}
 								<div class="panelBestSellers">
@@ -50,11 +50,12 @@
 								<div class="panelManufacturers">
 									<p class="titleBar">MANUFACTURERS</p>
 									<div id="manufacturersContainer">
-										<img src="{$img_dir}m1.png" alt="" />
-										<img src="{$img_dir}m3.png" alt="" />
-										<img src="{$img_dir}m4.png" alt="" />
-										<img src="{$img_dir}m5.png" alt="" />
-										<img src="{$img_dir}m6.png" alt="" />
+										<img src="{$img_dir}atlas-logo.png" alt="" />
+										<img src="{$img_dir}kc-logo.png" alt="" />
+										<img src="{$img_dir}unger-logo.png" alt="" />
+										<img src="{$img_dir}sofidel-logo.png" alt="" />
+										<img src="{$img_dir}wausau-logo.png" alt="" />
+										<img src="{$img_dir}deb-logo.png" alt="" />
 									</div>
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
 								</div>
@@ -62,23 +63,10 @@
 								<div class="panelNews">
 									<p class="titleBar">NEWS</p>
 									<div id="newsContainer">
-										News!
-										<br />
-										News!
-										<br />
-										News!
-										<br />
-										News!
-										<br />
-										News!
-										<br />
-										News!
-										<br />
-										News!
-										<br />
-										News!
-										<br />
-										
+										News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />
+										News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />
+										News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!
+
 									</div>
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
 								</div>

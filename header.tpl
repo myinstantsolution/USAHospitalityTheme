@@ -98,7 +98,7 @@
                             <a href="index.php?controller=my-account"><li>Log in/Register</li></a>
                             {/if}
                             <a href="index.php?controller=order"><li>My Cart</li></a>
-                            <img id="cartImg" src="{$img_dir}cart-icon.png" alt="" />
+                            <!--<img id="cartImg" src="{$img_dir}cart-icon.png" alt="" />-->
                         </ul>
 					</div>
 				</div>
@@ -108,8 +108,13 @@
 				<div class="large-16 small-16 columns">
 					<div class="panelLogoImages">
 						<a href="index.php"><img id="leftImg" src="{$img_dir}usa-logo-large.png" alt="" /></a>
-						<img id="rightImg" src="{$img_dir}logoImg.jpg" alt="" />
-						<p id="rightImgText">Supplies for Lodging, Entertainment and Food Service</p>
+						<div id="rightImgSizeLarge"></div>
+						<div id="rightImgSizeBig"></div>
+						<div id="rightImgSizeMedium"></div>
+						<div id="rightImgSizeSmall"></div>
+						<div id="rightImgSizeTiny"></div>
+						<!--<img id="rightImg" src="{$img_dir}logoImg.jpg" alt="" />-->
+						<!--<p id="rightImgText">Supplies for Lodging, Entertainment and Food Service</p>-->
 					</div>
 					<div class="panelLogoImagesM">
 						<a href="index.php"><img id="leftImgM" src="{$img_dir}/usa-logo-large.png" alt="" /></a>
@@ -125,23 +130,47 @@
                                 <input type="hidden" name="orderby" value="position">
                                 <input type="hidden" name="orderway" value="desc">
                                 <input class="search_query ac_input" type="text" id="search" name="search_query" value="" autocomplete="off">
-                                <input type="submit" id="submit" name="submit_search" value="Go!" >
+                                <input type="submit" id="submit" name="submit_search" value="Search" >
 							</form> 
                             <ul>
-                                <a href="index.php"><li>Home
-                                    <ul>
-                                        <li>Item1sdf</li>
-                                        <li>Item2</li>
-                                        <li>Item3f</li>
-                                        <li>Item4</li>
-                                        <li>Item5</li>	
+                                <a href="index.php?id_cms_category=3&controller=cms"><li>Company
+                                    <ul class="menuDropDown">
+                                        <a href="index.php?id_cms_category=4&controller=cms"><li>About Us</li></a>
+                                        <a href="index.php?id_cms_category=5&controller=cms"><li>Infrastructure</li></a>
+                                        <a href="index.php?id_cms_category=6&controller=cms"><li>Customers</li></a>
+										<a href="index.php?id_cms_category=7&controller=cms"><li>Divisions</li></a>
+                                        <a href="index.php?id_cms_category=8&controller=cms"><li>Hospitality B2B</li></a>
                                     </ul>
                                 </li></a>
-                                <a href="cms.php"><li>Company</li></a>
-                                <a href="cms.php"><li>Education</li></a>
-                                <a href="cms.php"><li>Investors</li></a>
-                                <a href="cms.php"><li>Divisions</li></a>
-                                <a href="cms.php"><li>Forms</li></a>
+                                <a href="index.php?id_cms_category=5&controller=cms"><li>Menu2
+									<ul class="menuDropDown">
+                                        <a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+                                    </ul>
+								</li></a>
+                                <a href="index.php?id_cms_category=6&controller=cms"><li>Menu3
+									<ul class="menuDropDown">
+                                        <a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+                                    </ul>
+								</li></a>
+                                <a href="index.php?id_cms_category=7&controller=cms"><li>Menu4
+									<ul class="menuDropDown">
+                                        <a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+                                    </ul>
+								</li></a>
+                                <a href="index.php?id_cms_category=8&controller=cms"><li>Menu5
+									<ul class="menuDropDown">
+                                        <a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+										<a href="#"><li>Dropdown</li></a>
+                                    </ul>
+								</li></a>
+                                <!--<a href="cms.php"><li>Hospitality B2B</li></a>-->
                             </ul>
                         </div>
                     </div>

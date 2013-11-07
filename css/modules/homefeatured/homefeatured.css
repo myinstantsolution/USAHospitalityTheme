@@ -3,8 +3,7 @@
 
 #featured-products_block_center{
 	height:auto;	
-	background-color:#CCC;
-	border:1px solid #999;
+	background-color:#e3e2e2;
 }
 #featured-products_block_center li {
 	float:left;
@@ -16,6 +15,11 @@
 	height:auto;
 	min-height:390px;
 }
+#featured-products_block_center .block_content{
+	border:1px solid #999;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
 
 p.s_title_block{
 	font-weight:bold;	
@@ -25,7 +29,7 @@ p.s_title_block{
 		font-size:14px;
 	}
 .product_desc a{
-	color:#000;	
+	color:#6d6e71;	
 }
 .clearBoth{
 	clear:both;

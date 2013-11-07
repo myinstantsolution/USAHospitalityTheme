@@ -6,9 +6,10 @@
 #cms #center_column li { margin-bottom:5px }
 
 #landingOptionsBody{
-	background-color:#CCC;
+	background-color:#e3e2e2;
 	border:1px solid #999;
 	height:auto; /*for now*/	
+	border-radius:5px;
 }
 .landingOptionsSmallFirst{
 	float:left;
