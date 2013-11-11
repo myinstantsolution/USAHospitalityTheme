@@ -107,7 +107,9 @@
             <div class="row">
 				<div class="large-16 small-16 columns">
 					<div class="panelLogoImages">
-						<a href="index.php"><img id="leftImg" src="{$img_dir}usa-logo-large.png" alt="" /></a>
+						<a href="index.php">
+							<img id="leftImg" src="{$img_dir}usa-logo-large.png" alt="" />
+						</a>
 						<div id="rightImgSizeLarge"></div>
 						<div id="rightImgSizeBig"></div>
 						<div id="rightImgSizeMedium"></div>
@@ -117,7 +119,10 @@
 						<!--<p id="rightImgText">Supplies for Lodging, Entertainment and Food Service</p>-->
 					</div>
 					<div class="panelLogoImagesM">
-						<a href="index.php"><img id="leftImgM" src="{$img_dir}/usa-logo-large.png" alt="" /></a>
+						<a href="index.php"><img id="leftImgM" src="{$img_dir}usa-logo-large.png" alt="" /></a>
+					</div>
+					<div class="panelLogoImagesMSmall">
+						<a href="index.php"><img id="leftImgMSmall" src="{$img_dir}usa-logo-sm.png" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -133,7 +138,7 @@
                                 <input type="submit" id="submit" name="submit_search" value="Search" >
 							</form> 
                             <ul>
-                                <a href="index.php?id_cms_category=3&controller=cms"><li>Company
+                                <a href="index.php?id_cms_category=3&controller=cms"><li>Company<div class="mobileArrows">&gt;</div>
                                     <ul class="menuDropDown">
                                         <a href="index.php?id_cms_category=4&controller=cms"><li>About Us</li></a>
                                         <a href="index.php?id_cms_category=5&controller=cms"><li>Infrastructure</li></a>
@@ -142,28 +147,28 @@
                                         <a href="index.php?id_cms_category=8&controller=cms"><li>Hospitality B2B</li></a>
                                     </ul>
                                 </li></a>
-                                <a href="index.php?id_cms_category=5&controller=cms"><li>Menu2
+                                <a href="index.php?id_cms_category=5&controller=cms"><li>Menu2<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
                                         <a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
                                     </ul>
 								</li></a>
-                                <a href="index.php?id_cms_category=6&controller=cms"><li>Menu3
+                                <a href="index.php?id_cms_category=6&controller=cms"><li>Menu3<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
                                         <a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
                                     </ul>
 								</li></a>
-                                <a href="index.php?id_cms_category=7&controller=cms"><li>Menu4
+                                <a href="index.php?id_cms_category=7&controller=cms"><li>Menu4<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
                                         <a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
                                     </ul>
 								</li></a>
-                                <a href="index.php?id_cms_category=8&controller=cms"><li>Menu5
+                                <a href="index.php?id_cms_category=8&controller=cms"><li>Menu5<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
                                         <a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
@@ -173,6 +178,26 @@
                                 <!--<a href="cms.php"><li>Hospitality B2B</li></a>-->
                             </ul>
                         </div>
+						<div id="panelTopMenuM">
+							{if $cms_category->id == 2}
+							<ul id="menuMobile">
+								<a href="index.php?id_cms_category=3&controller=cms"><li><img class="mobileIcons" src="{$img_dir}world.png" />Company<div class="mobileArrows"></div></li></a>
+								<a href="index.php?id_cms_category=5&controller=cms"><li><img class="mobileIcons" src="{$img_dir}tag.png" />Menu2<div class="mobileArrows"></div></li></a>
+								<a href="index.php?id_cms_category=6&controller=cms"><li><img class="mobileIcons" src="{$img_dir}my_account.png" />Menu3<div class="mobileArrows"></div></li></a>
+								<a href="index.php?id_cms_category=7&controller=cms"><li><img class="mobileIcons" src="{$img_dir}divisions.png" />Menu4<div class="mobileArrows"></div></li></a>
+								<a href="index.php?id_cms_category=8&controller=cms"><li><img class="mobileIcons" src="{$img_dir}contact_us.png" />Menu5<div class="mobileArrows"></div></li></a>
+							</ul>
+							{else}
+								<p class="titleBarMobileMenu">MENU</p>
+								<select onChange="window.location.href=this.value">
+									<option value="index.php?id_cms_category=3&controller=cms">Company</option>
+									<option value="index.php?id_cms_category=5&controller=cms">Menu2</option>
+									<option value="index.php?id_cms_category=6&controller=cms">Menu3</option>
+									<option value="index.php?id_cms_category=7&controller=cms">Menu4</option>
+									<option value="index.php?id_cms_category=8&controller=cms">Menu5</option>
+								</select>
+							{/if}
+						</div>
                     </div>
                 </div>
 

@@ -24,9 +24,9 @@
 *}
 
 {capture name=path}<a href="{$link->getPageLink('my-account', true)}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='Credit slips'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='CREDIT SLIPS'}</h1>
+{include file="$tpl_dir./breadcrumb.tpl"}
 <div class="customPageBg">
     <p>{l s='Credit slips you have received after cancelled orders'}.</p>
     <div class="block-center" id="block-history">

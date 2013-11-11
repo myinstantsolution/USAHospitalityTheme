@@ -24,14 +24,13 @@
 *}
 
 {capture name=path}{l s='Search'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 <div class="customPageBg">
     <h1 class="titleBar" {if isset($instantSearch) && $instantSearch}id="instant_search_results"{/if}>
     {l s='SEARCH'}&nbsp;{if $nbProducts > 0}"{if isset($search_query) && $search_query}{$search_query|escape:'htmlall':'UTF-8'}{elseif $search_tag}{$search_tag|escape:'htmlall':'UTF-8'}{elseif $ref}{$ref|escape:'htmlall':'UTF-8'}{/if}"{/if}
     {if isset($instantSearch) && $instantSearch}<a href="#" class="close">{l s='Return to the previous page'}</a>{/if}
     </h1>
-    
-    {include file="$tpl_dir./errors.tpl"}
+	{include file="$tpl_dir./errors.tpl"}
+    {include file="$tpl_dir./breadcrumb.tpl"}
     {if !$nbProducts}
         <p class="warning">
             {if isset($search_query) && $search_query}

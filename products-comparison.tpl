@@ -25,8 +25,8 @@
 
 {capture name=path}{l s='Product Comparison'}{/capture}
 
-{include file="$tpl_dir./breadcrumb.tpl"}
 <h1 class="titleBar">{l s='PRODUCT COMPARISON'}</h1>
+{include file="$tpl_dir./breadcrumb.tpl"}
 <div class="customPageBg">
     {if $hasProduct}
     <div class="products_block">

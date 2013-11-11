@@ -24,9 +24,9 @@
 *}
 
 {capture name=path}<a href="{$link->getPageLink('authentication', true)}" title="{l s='Authentication'}" rel="nofollow">{l s='Authentication'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='Forgot your password'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='FORGOT YOUR PASSWORD?'}</h1>
+{include file="$tpl_dir./breadcrumb.tpl"}
 <div class="customPageBg">
     {include file="$tpl_dir./errors.tpl"}
     

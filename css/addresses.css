@@ -11,7 +11,7 @@ ul.address {
    list-style-type:none;
    float:left;
    position:relative;
-   width:345px !important
+   width:100% !important
 }
 #address_delivery {margin-right:35px;}
 #address_invoice {margin-right:0}
@@ -30,6 +30,7 @@ ul.address li.address_title {
    line-height:29px;
    color:#fff;
     text-shadow:0 1px 0 #666;
+	width:100%;
    background:url(../img/bg_table_th.png) repeat-x 0 -10px #999
 }
 ul.address .address_alias {
@@ -101,5 +102,10 @@ p.address_delivery, p.addressesAreEquals {
 .addresses ul.address .address_delete {
 	font-size:11px;
    text-transform:none
+}
+@media only screen and (max-width: 600px) {
+ul.address li.address_title {
+	font-size:11px;
+	}
 }
 

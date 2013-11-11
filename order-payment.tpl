@@ -23,6 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
+{if !$opc}<h1 class="titleBar">{l s='PLEASE CHOOSE YOUR PAYMENT METHOD'}</h1>{else}<h2><span>3</span> {l s='Please choose your payment method'}</h2>{/if}
 {if !$opc}
 	<script type="text/javascript">
 	// <![CDATA[
@@ -38,8 +39,6 @@
 	{capture name=path}{l s='Your payment method'}{/capture}
 	{include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
-
-{if !$opc}<h1 class="titleBar">{l s='PLEASE CHOOSE YOUR PAYMENT METHOD'}</h1>{else}<h2><span>3</span> {l s='Please choose your payment method'}</h2>{/if}
 <div class="customPageBorder">
     {if !$opc}
         {assign var='current_step' value='payment'}

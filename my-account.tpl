@@ -24,9 +24,9 @@
 *}
 
 {capture name=path}{l s='My account'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='MY ACCOUNT'}</h1>
+{include file="$tpl_dir./breadcrumb.tpl"}
 <div class="customPageBg">
     {if isset($account_created)}
         <p class="success">

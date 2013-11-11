@@ -24,9 +24,9 @@
 *}
 
 {capture name=path}<a href="{$link->getPageLink('my-account', true)}">{l s='My account'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='Your personal information'}{/capture}
-{include file="$tpl_dir./breadcrumb.tpl"}
 
 <h1 class="titleBar">{l s='YOUR PERSONAL INFORMATION'}</h1>
+{include file="$tpl_dir./breadcrumb.tpl"}
 <div class="customPageBg">
     {include file="$tpl_dir./errors.tpl"}
     

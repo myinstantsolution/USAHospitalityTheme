@@ -69,11 +69,6 @@
 {/if}
 
 {if !$opc}
-	{capture name=path}{l s='Shipping:'}{/capture}
-	{include file="$tpl_dir./breadcrumb.tpl"}
-{/if}
-
-{if !$opc}
 	<div id="carrier_area">
 {else}
 	<div id="carrier_area" class="opc-main-block">
@@ -83,6 +78,10 @@
 	<h1 class="titleBar">{l s='SHIPPING:'}</h1>
 {else}
 	<h2 class="titleBar"><span>2</span> {l s='DELIVERY METHODS'}</h2>
+{/if}
+{if !$opc}
+	{capture name=path}{l s='Shipping:'}{/capture}
+	{include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
 <div class="customPageBg">
     {if !$opc}

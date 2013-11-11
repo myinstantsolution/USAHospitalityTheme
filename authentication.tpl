@@ -67,8 +67,8 @@ $(document).ready(function() {
 });
 {/literal}
 </script>
-{include file="$tpl_dir./breadcrumb.tpl"}
 <p class="titleBar">{if !isset($email_create)}{l s='LOG IN'}{else}{l s='CREATE AN ACCOUNT'}{/if}</p>
+{include file="$tpl_dir./breadcrumb.tpl"}
 {if !isset($back) || $back != 'my-account'}{assign var='current_step' value='login'}{include file="$tpl_dir./order-steps.tpl"}{/if} 
 {include file="$tpl_dir./errors.tpl"}
 {assign var='stateExist' value=false}

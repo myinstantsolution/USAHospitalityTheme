@@ -148,12 +148,12 @@
 //]]>
 </script>
 
+{if !$opc}<h1>{l s='Addresses'}</h1>{else}<h2><span>1</span> {l s='Addresses'}</h2>{/if}
+
 {if !$opc}
 {capture name=path}{l s='Addresses'}{/capture}
 {include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
-
-{if !$opc}<h1>{l s='Addresses'}</h1>{else}<h2><span>1</span> {l s='Addresses'}</h2>{/if}
 
 {if !$opc}
 {assign var='current_step' value='address'}

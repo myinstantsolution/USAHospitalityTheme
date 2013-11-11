@@ -24,7 +24,7 @@
 *}
 
 
-{if ($content_only == 0)}
+{if ($content_only == 0 && $cms_category->id !=2)}
 	{include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
 
