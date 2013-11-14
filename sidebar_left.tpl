@@ -26,12 +26,12 @@
 		{if !$content_only}
 			<div class="row">
 				{if $page_name != 'cms' || Tools::getValue('id_cms') == 12}
-					<div class="large-3 small-16 columns">
+					<div class="three large-3 sixteen small-16 columns">
 						{$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in USAHospitalityTheme/css/modules/blockcategories -->
 					</div>
-					<div class="large-11 small-16 columns" id="container">	
+					<div class="eleven large-11 sixteen small-16 columns" id="container">	
 				{else}
-				<div class="large-14 small-16 columns" id="container">
+				<div class="fourteen large-14 sixteen small-16 columns" id="container">
 				{$HOOK_LEFT_COLUMN}				
 				{/if}
             	

@@ -73,7 +73,7 @@
 		</div>
 		{/if}
 		 <div class="row">
-		<div class="large-16 columns" >
+		<div class="sixteen large-16 columns" >
 
 			<!-- Header -->
             
@@ -82,7 +82,7 @@
 					<img class="logo" src="{$logo_url}" alt="{$shop_name|escape:'htmlall':'UTF-8'}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}" {/if} />
 				</a>-->
 				<div class="row">
-				<div class="large-16 columns">
+				<div class="sixteen large-16 columns">
 					<div class="panelTopBar">
                     
                     <img src="{$img_dir}topMenuLeft.jpg" alt="" />
@@ -105,7 +105,7 @@
 			</div>
             
             <div class="row">
-				<div class="large-16 small-16 columns">
+				<div class="sixteen large-16 sixteen small-16 columns">
 					<div class="panelLogoImages">
 						<a href="index.php">
 							<img id="leftImg" src="{$img_dir}usa-logo-large.png" alt="" />
@@ -128,7 +128,7 @@
 			</div>
             
 			<div class="row">
-                <div class="large-16 columns">
+                <div class="sixteen large-16 columns">
                         <div class="panelTopMenu">
                         	<form method="get" action="index.php?controller=search" id="searchbox">
                                 <input type="hidden" name="controller" value="search">
@@ -203,7 +203,7 @@
 
 			<!--main-->
             <div class="row">
-				<div class="large-16 columns">
+				<div class="sixteen large-16 columns">
 					
             <!--main-->
 	{/if}

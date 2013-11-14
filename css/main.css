@@ -1151,6 +1151,9 @@ a#title_block_footer_link{
 	.mobileIcons{
 		display:none;
 	}
+	.titleBar{
+		font-size:12px;
+	}
 }
 
 @media only screen and (max-width: 600px) {

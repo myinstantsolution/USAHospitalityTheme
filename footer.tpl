@@ -28,7 +28,7 @@
 			</div> <!--end main-->
  
 				<div class="row">
-				<div class="large-16 columns">
+				<div class="sixteen large-16 columns">
 					<div class="panelFooter">
                         <div class="footerSections">
                         

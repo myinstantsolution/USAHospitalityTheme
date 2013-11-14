@@ -226,13 +226,7 @@ $(document).ready(function() {
 				</p>
 				<p class="select">
 					<span>{l s='Date of Birth'}</span>
-					<select id="days" name="days">
-						<option value="">-</option>
-						{foreach from=$days item=day}
-							<option value="{$day}" {if ($sl_day == $day)} selected="selected"{/if}>{$day}&nbsp;&nbsp;</option>
-						{/foreach}
-					</select>
-				{*
+						{*
 						  {l s='January'}
 						  {l s='February'}
 						  {l s='March'}
@@ -250,6 +244,12 @@ $(document).ready(function() {
 						<option value="">-</option>
 						{foreach from=$months key=k item=month}
 							<option value="{$k}" {if ($sl_month == $k)} selected="selected"{/if}>{l s=$month}&nbsp;</option>
+						{/foreach}
+					</select>
+					<select id="days" name="days">
+						<option value="">-</option>
+						{foreach from=$days item=day}
+							<option value="{$day}" {if ($sl_day == $day)} selected="selected"{/if}>{$day}&nbsp;&nbsp;</option>
 						{/foreach}
 					</select>
 					<select id="years" name="years">
@@ -406,13 +406,7 @@ $(document).ready(function() {
 			<!--hidden <span class="form_info">{l s='(Five characters minimum)'}</span> -->
 		</p>
 		<p class="select">
-			<span>{l s='Date of Birth'}</span>
-			<select id="days" name="days">
-				<option value="">-</option>
-				{foreach from=$days item=day}
-					<option value="{$day}" {if ($sl_day == $day)} selected="selected"{/if}>{$day}&nbsp;&nbsp;</option>
-				{/foreach}
-			</select>
+			<span>{l s='Date of Birth'}</span>	
 			{*
 				{l s='January'}
 				{l s='February'}
@@ -431,6 +425,12 @@ $(document).ready(function() {
 				<option value="">-</option>
 				{foreach from=$months key=k item=month}
 					<option value="{$k}" {if ($sl_month == $k)} selected="selected"{/if}>{l s=$month}&nbsp;</option>
+				{/foreach}
+			</select>
+			<select id="days" name="days">
+				<option value="">-</option>
+				{foreach from=$days item=day}
+					<option value="{$day}" {if ($sl_day == $day)} selected="selected"{/if}>{$day}&nbsp;&nbsp;</option>
 				{/foreach}
 			</select>
 			<select id="years" name="years">
