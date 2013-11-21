@@ -26,7 +26,7 @@
 
 
 {if $category->id == 1 OR $nb_products == 0}
-	{l s='There are no products in  this category'}
+	{*{l s='There are no products in  this category'}*}
 {else}
 	{if $nb_products == 1}
 		{l s='There is %d product.' sprintf=$nb_products}

@@ -42,9 +42,4 @@
 			<div class="productDivs"></div>-->
 			<div class="clearBoth"></div> <!--to make height: auto; work-->
 		</div>
-		<!--					
-        <div class="panelMoreItems">
-            <p class="titleBar">MORE ITEMS TO CONSIDER</p>
-        </div>
-        -->
 										

@@ -76,7 +76,7 @@
 	</div>
 </div>
 {else}
-<!-- Mobile version (categories are a select -> option drop down menu) -->
+<!-- CMS page version (categories are a select -> option drop down menu) -->
 	<div id="cmsMenu" class="block">
 		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
 		<div class="block_content">

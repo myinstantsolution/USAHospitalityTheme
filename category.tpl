@@ -71,52 +71,62 @@
 			{if isset($subcategories)}
 			<!-- Subcategories -->
 			<div id="subcategories">
-				<h3>{l s='Subcategories'}</h3>
+				<!--<h3>{l s='Subcategories'}</h3>-->
 				<ul class="inline_list">
 				{foreach from=$subcategories item=subcategory}
 					<li class="clearfix">
 						<a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'htmlall':'UTF-8'}" title="{$subcategory.name|escape:'htmlall':'UTF-8'}" class="img">
 							{if $subcategory.id_image}
-								<img src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image, 'medium_default')}" alt="" width="{$mediumSize.width}" height="{$mediumSize.height}" />
+								<img src="{$link->getCatImageLink($subcategory.link_rewrite, $subcategory.id_image, 'large_default')}" alt="" width="{$largeSize.width}" height="{$largeSize.height}" />
 							{else}
-								<img src="{$img_cat_dir}default-medium_default.jpg" alt="" width="{$mediumSize.width}" height="{$mediumSize.height}" />
+								<img src="{$img_cat_dir}default-large_default.jpg" alt="" width="{$largeSize.width}" height="{$largeSize.height}" />
 							{/if}
 						</a>
 						<a href="{$link->getCategoryLink($subcategory.id_category, $subcategory.link_rewrite)|escape:'htmlall':'UTF-8'}" class="cat_name">{$subcategory.name|escape:'htmlall':'UTF-8'}</a>
+						<!--
 						{if $subcategory.description}
 							<p class="cat_desc">{$subcategory.description}</p>
-						{/if}
+						{/if}-->
 					</li>
 				{/foreach}
 				</ul>
 				<br class="clear"/>
+				<div class="clearBoth"></div>
 			</div>
 			{/if}
-
+			
 			{if $products}
 				<div class="content_sortPagiBar">
 					{include file="$tpl_dir./pagination.tpl"}
+					{if !$subcategories}
 					<div class="sortPagiBar clearfix">
 						{include file="./product-sort.tpl"}
 						{include file="./product-compare.tpl"}
 						{include file="./nbr-product-page.tpl"}
 					</div>
+					{/if}
 				</div>
 				
+				{if !$subcategories}
 				{include file="./product-list.tpl" products=$products}
+				{/if}
 				
 				<div class="content_sortPagiBar">
+				{if !$subcategories}
 					<div class="sortPagiBar clearfix">
-						{include file="./product-sort.tpl"}
-						{include file="./product-compare.tpl"}
+						{*{include file="./product-sort.tpl"}*}
+						{*{include file="./product-compare.tpl"}*}
 						{include file="./nbr-product-page.tpl"}
 					</div>
+				{/if}
 					{include file="./pagination.tpl"}
 				</div>
 			{/if}
+			<!--
 			<div class="resumecat category-product-count">
 				{include file="$tpl_dir./category-count.tpl"}
 			</div>
+			-->
 		{elseif $category->id}
 			<p class="warning">{l s='This category is currently unavailable.'}</p>
 		{/if}

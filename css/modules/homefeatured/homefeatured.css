@@ -23,11 +23,11 @@
 
 p.s_title_block{
 	font-weight:bold;	
-	font-size:18px;
+	font-size:12px;
 }
 .product_desc{
-		font-size:14px;
-	}
+	font-size:10px;
+}
 .product_desc a{
 	color:#6d6e71;	
 }

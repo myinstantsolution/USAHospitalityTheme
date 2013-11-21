@@ -29,20 +29,6 @@
 							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
 							{if $page_name != 'cms' || Tools::getValue('id_cms') == 12}
 								<div class="panelBestSellers">
-									<!--<p class="titleBar">BEST SELLERS</p>
-									<div class="bestSellersDiv">
-										<p>Product 1</p>
-										<img src="{$img_dir}img6.jpg" alt="" />
-									</div>
-									<div class="bestSellersDiv">
-										<p>Product 2</p>
-										<img src="{$img_dir}img1.jpg" alt="" />
-									</div>
-									<div class="bestSellersDiv">
-										<p>Product 3</p>
-										<img src="{$img_dir}img9.jpg" alt="" />
-									</div>
-                                    -->
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
                                     {$HOOK_RIGHT_COLUMN}
 								</div>

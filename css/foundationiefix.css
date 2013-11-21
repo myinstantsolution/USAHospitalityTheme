@@ -1,5 +1,5 @@
 /* The Grid ---------------------- */
-.lt-ie9 .row { width: 1800px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.lt-ie9 .row { width: 1280px; max-width: 100%; min-width: 1024px; margin: 0 auto; }
 .lt-ie9 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
 .lt-ie9 .row.large-collapse .column, 
 .lt-ie9 .row.large-collapse .columns { padding: 0; }
@@ -103,10 +103,122 @@
 .lt-ie9 .push-13 { left: 81.25%; }
 .lt-ie9 .push-14 { left: 87.5%; }
 
-.lt-ie9 .panelLogoImages div{
+/* ie7 grid */
+.ie7 .row { width: 1280px; max-width: 100%; min-width: 1024px; margin: 0 auto; }
+.ie7 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -8px; }
+.ie7 .row.large-collapse .column, 
+.ie7 .row.large-collapse .columns { padding: 0; }
+.ie7 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -8px; }
+.ie7 .row .row.large-collapse { margin: 0; }
+ 
+.ie7 .column, .lt-ie9 .columns { float: left; min-height: 1px; padding: 0 8px; position: relative; }
+.ie7 .column.large-centered, .columns.large-centered { float: none; margin: 0 auto; }
+ 
+.ie7 [class*="column"] + [class*="column"]:last-child { float: right; }
+.ie7 [class*="column"] + [class*="column"].end { float: left; }
+ 
+.ie7 .large-1, 
+.ie7 .row .large-1 { width: 4.25%; }
+ 
+.ie7 .large-2, 
+.ie7 .row .large-2 { width: 10.5%; }
+ 
+.ie7 .large-3, 
+.ie7 .row .large-3 { width: 16.75%; }
+ 
+.ie7 .large-4, 
+.ie7 .row .large-4 { width: 23%; }
+ 
+.ie7 .large-5, 
+.ie7 .row .large-5 { width: 29.25%; }
+ 
+.ie7 .large-6, 
+.ie7 .row .large-6 { width: 35.5%; }
+ 
+.ie7 .large-7, 
+.ie7 .row .large-7 { width: 41.75%; }
+ 
+.ie7 .large-8, 
+.ie7 .row .large-8 { width: 48%; }
+ 
+.ie7 .large-9, 
+.ie7 .row .large-9 { width: 54.25%; }
+ 
+.ie7 .large-10, 
+.ie7 .row .large-10 { width: 60.5%; }
+ 
+.ie7 .large-11, 
+.ie7 .row .large-11 { width: 66.75%; }
+ 
+.ie7 .large-12,
+.ie7 .row .large-12 { width: 73%; }
+
+.ie7 .large-13,
+.ie7 .row .large-13 { width: 79.25%; }
+
+.ie7 .large-14,
+.ie7 .row .large-14 { width: 85.5%; }
+
+.ie7 .large-15,
+.ie7 .row .large-15 { width: 91.75%; }
+
+.ie7 .large-16,
+.ie7 .row .large-16 { width: 100%; }
+ 
+.ie7 .row .large-offset-1 { margin-left: 4.25%; }
+.ie7 .row .large-offset-2 { margin-left: 10.5%; }
+.ie7 .row .large-offset-3 { margin-left: 16.75%; }
+.ie7 .row .large-offset-4 { margin-left: 23; }
+.ie7 .row .large-offset-5 { margin-left: 29.25%; }
+.ie7 .row .large-offset-6 { margin-left: 35.5%; }
+.ie7 .row .large-offset-7 { margin-left: 41.75%; }
+.ie7 .row .large-offset-8 { margin-left: 48%; }
+.ie7 .row .large-offset-9 { margin-left: 54.25%; }
+.ie7 .row .large-offset-10 { margin-left: 60.5%; }
+.ie7 .row .large-offset-11 { margin-left: 66.25%; }
+.ie7 .row .large-offset-12 { margin-left: 73%; }
+.ie7 .row .large-offset-13 { margin-left: 79.25%; }
+.ie7 .row .large-offset-14 { margin-left: 85.5%; }
+ 
+.ie7 .pull-2 { right: 10.5%; }
+.ie7 .pull-3 { right: 16.75%; }
+.ie7 .pull-4 { right: 23%; }
+.ie7 .pull-5 { right: 29.25%; }
+.ie7 .pull-6 { right: 35.5%; }
+.ie7 .pull-7 { right: 41.75%; }
+.ie7 .pull-8 { right: 48%; }
+.ie7 .pull-9 { right: 54.25%; }
+.ie7 .pull-10 { right: 60.5%; }
+.ie7 .pull-11 { right: 66.25%; }
+.ie7 .pull-12 { right: 73%; }
+.ie7 .pull-13 { right: 79.25%; }
+.ie7 .pull-14 { right: 85.5%; }
+ 
+.ie7 .push-2 { left: 10.5%; }
+.ie7 .push-3 { left: 16.75%; }
+.ie7 .push-4 { left: 23%; }
+.ie7 .push-5 { left: 29.25%; }
+.ie7 .push-6 { left: 35.5%; }
+.ie7 .push-7 { left: 41.75%; }
+.ie7 .push-8 { left: 48%; }
+.ie7 .push-9 { left: 54.25%; }
+.ie7 .push-10 { left: 60.5%; }
+.ie7 .push-11 { left: 66.25%; }
+.ie7 .push-12 { left: 73%; }
+.ie7 .push-13 { left: 79.25%; }
+.ie7 .push-14 { left: 85.5%; }
+/* end ie7 grid */
+
+.lt-ie9 .panelLogoImages #rightImgSizeLarge, .lt-ie9 .panelLogoImages #rightImgSizeBig{
 	display:none;
 }
-.lt-ie9 .panelLogoImages div#rightImgSizeMedium{
+.lt-ie9 .panelLogoImages #rightImgSizeMedium{
+	display:block;
+	background-image:url(../img/rightImg1000.png);
+	width:70%;
+	max-width:1600px;
+	height:200px;
+	float:right;
 	display:block;
 }
 
@@ -123,13 +235,38 @@
 	background-color:#1276b8;
 	font-size:11px;
 }
+.lt-ie9 .titleBar{
+	background-image:none;
+	background-color:#1276b8;
+	font-size:13px;
+	height:20px;
+	line-height:20px;
+}
 .lt-ie9 .panelSideMenu ul li{
 	background-color:#e3e2e2;
+}
+.lt-ie9 .panelTopMenu li:hover ul{
+	display:none !important;
 }
 
 /*ie8 styles only*/
 .ie8 .panelTopMenu ul{
 	margin-top:-15px;
+}
+
+.ie8 .inline_list li .img {
+        width:90%;
+        margin-left:5%;
+}
+.ie8 #product_list a.product_img_link {
+       width:124px;
+       height:130px;
+}
+.ie8 .inline_list li .cat_name {
+        margin-right:0px;
+}
+.ie8 .panelLogoImages{
+	height:220px;
 }
 /*ie7 styles only*/
 .ie7 .panelTopMenu #search {
@@ -137,13 +274,20 @@
 }
 .ie7 .panelTopBar{
 	background-image:none;
-	background-color:#1276b8;
+	background: #91bbe2; /* Old browsers */
+	background: -moz-linear-gradient(top, #91bbe2 1%, #256cc4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#91bbe2), color-stop(100%,#256cc4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #91bbe2 1%,#256cc4 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #91bbe2 1%,#256cc4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91bbe2', endColorstr='#256cc4',GradientType=0 ); /* IE6-9 */
 }
 .ie7 .panelTopBar img{
 	display:none;
 }
 .ie7 .panelTopBar ul {
-	margin-top:-3px;
+	margin-top:-5px;
 }
 .ie7 .panelTopBar ul li{
 	color:#FFF;
@@ -157,8 +301,21 @@
 
 .ie7 .panelSideMenu ul li{
 	line-height:17px;
-	display:block;
+	display:block;	
 	font-size:11px;
+	background-color:#e3e2e2;	
+}
+.ie7 .footerSections{
+	width:20%;
+}
+.ie7 .lightGrayTitleBar {
+	width:98%;
+}
+.ie7 input[type="text"], .ie7 input[type="password"], .ie7 textarea{
+	width:98%;
+}
+.ie7 .addresses ul.address .address_title{
+	width:96%;
 }
 /* Nicolas Gallagher's micro clearfix */
 .lt-ie9 .row { *zoom: 1; }
