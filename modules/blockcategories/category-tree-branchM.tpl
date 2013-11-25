@@ -24,7 +24,7 @@
 *}
 
  <!-- Small categories menu (categories are a select -> option drop down menu) -->
-	<option value="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'} {if isset($last) && $last == 'true'}{/if}
+	<option value="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} {*title="{$node.desc|escape:'htmlall':'UTF-8'}"*}>{$node.name|escape:'htmlall':'UTF-8'} {if isset($last) && $last == 'true'}{/if}
 		<!--<a href="{$node.link|escape:'htmlall':'UTF-8'}" {if isset($currentCategoryId) && $node.id == $currentCategoryId}class="selected"{/if} title="{$node.desc|escape:'htmlall':'UTF-8'}">{$node.name|escape:'htmlall':'UTF-8'}</a>-->
 		{*
 		{if $node.children|@count > 0}

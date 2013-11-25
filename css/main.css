@@ -230,6 +230,19 @@ li{
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
+
+.panelNews .titleBar{
+	background-image:url(../img/titlebar.svg);
+	background-size:100% 100%;
+	color:#FFF;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	font-size:17px;
+	word-wrap:break-word;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
 .panelManufacturers .titleBar{
 	background-image:url(../img/titlebar.svg);
 	background-size:100% 100%;
@@ -886,6 +899,9 @@ a#title_block_footer_link{
 	.mobileArrows{
 		display:none;
 	}
+	.panelNews .titleBar{
+		font-size:12px;
+	}
 
 }
 @media only screen and (max-width: 1023px) {
@@ -939,6 +955,9 @@ a#title_block_footer_link{
 	}
 	.mobileArrows{
 		display:none;
+	}
+	.panelNews .titleBar{
+		font-size:12px;
 	}
 		
 }
@@ -1162,12 +1181,12 @@ a#title_block_footer_link{
 		display:none;
 	}
 	.col1{
-		display:block;
-		float:left;
-		margin-left:2%;
-		width:96%;
-		height:400px;
-		background-color:#e3e2e2;
+		display:none;
+		/*float:left;*/
+		/*margin-left:2%;*/
+		/*width:96%;*/
+		/*height:400px;*/
+		/*background-color:#e3e2e2;*/
 	}
 	.panelNews{
 		display:none;
@@ -1223,6 +1242,12 @@ a#title_block_footer_link{
 		height:62px;
 		margin-bottom:5px;
 	}
+        select#x_exp_date_m{
+                width:30% !important;
+        }
+        select#x_exp_date_y{
+                width:60% !important;
+        }
 }
 	
 }

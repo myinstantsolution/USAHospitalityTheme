@@ -27,7 +27,7 @@
         		</div>			
                     <div class="two large-2 sixteen small-16 columns">
 							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
-							{if $page_name != 'cms' || Tools::getValue('id_cms') == 12}
+							{if $page_name != 'cms'}
 								<div class="panelBestSellers">
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
                                     {$HOOK_RIGHT_COLUMN}

@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-
+{*so breadcrumbs don't show up on the home page*}
 {if ($content_only == 0 && $cms_category->id !=2)}
 	{include file="$tpl_dir./breadcrumb.tpl"}
 {/if}
@@ -43,12 +43,7 @@
 		</div>
 	{/if}
 	<div class="rte{if $content_only} content_only{/if}">
-		{if Tools::getValue('id_cms') == 12}
-			<div class="panelCenterImg">
-				<img src="{$img_dir}promo-bannerg.png" alt="" />
-			</div>
-			{$HOOK_HOME}
-		{else}
+		
 			<div id="landingOptionsBody">
 			{$cms->content}
 				<a href="index.php?id_cms=7&controller=cms"><div class="landingOptionsSmallFirst">To lodging</div></a>
@@ -58,7 +53,7 @@
 				<a href="index.php?id_cms=11&controller=cms"><div class="landingOptionsSmall">to help center</div></a>
 				<div class="clearBoth"></div> <!--to make height: auto; work-->
 			</div>
-		{/if}
+
 	</div>
 {elseif $cms_category->id == 2}
 	<div class="block-cms">
@@ -109,6 +104,7 @@
 	</div>
 	{elseif $cms_category->id != 2}
 	
+	{*so they show?*}
 	{if $cms_category->id == 3}
 		<a href="index.php?id_cms_category=4&controller=cms">About us</a><br />
 		<a href="index.php?id_cms_category=5&controller=cms">Infrastructure</a><br />

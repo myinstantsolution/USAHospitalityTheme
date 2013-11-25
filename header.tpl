@@ -149,7 +149,7 @@
                                 </li></a>
                                 <a href="index.php?id_cms_category=5&controller=cms"><li>Menu2<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
-                                        <a href="#"><li>Dropdown</li></a>
+                                        <a href="index.php?controller=shophome"><li>Shop Home</li></a>
 										<a href="#"><li>Dropdown</li></a>
 										<a href="#"><li>Dropdown</li></a>
                                     </ul>

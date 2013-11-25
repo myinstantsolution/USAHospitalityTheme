@@ -24,7 +24,7 @@
 *}
 
 <!-- Block categories module -->
-{if $page_name != 'cms' || Tools::getValue('id_cms') == 12}
+{if $page_name != 'cms'}
 <div class="panelSideMenu"> <!-- Desktop version (categories are a list) -->
 	<div id="categories_block_left" class="block">
 		<p class="title_block">{l s='CATEGORIES' mod='blockcategories'}</p>
