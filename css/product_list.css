@@ -6,7 +6,7 @@ ul#product_list {
 	#product_list li {
 		margin-bottom: 14px;
 		height:380px;
-		width:22%;
+		width:24%;
 		margin-left:1%;
 		float:left;
 		/*border-bottom:1px solid #ccc;*/
@@ -57,7 +57,7 @@ ul#product_list {
 			vertical-align: bottom
 		}
 		#product_list li span.new {
-			display: block;
+			display: none;/* for now */
 			position: absolute;
 			top: 15px;
 			right:-30px;
@@ -160,6 +160,13 @@ ul#product_list {
 		background:url(../img/arrow_right_1.png) no-repeat 100% 4px transparent
 	}
 	#product_list li .lnk_view:hover {text-decoration:underline}
+	
+	@media only screen and (max-width: 980px) {
+		#product_list li {
+		width:32%;
+		}
+	}
+	
 	@media only screen and (max-width: 768px) {
 		#product_list li .center_block {
 			float:left;
@@ -175,3 +182,51 @@ ul#product_list {
 		#product_list li .ajax_add_to_cart_button {
 			float:left;	
 		}
+	}
+	@media only screen and (max-width: 560px) {
+		#product_list li {
+			width:48%;
+		}
+	}
+	@media only screen and (max-width: 460px) {
+		#product_list li {
+			width:100%;
+			float:none !important;
+			margin:0 auto !important;
+			height:auto;
+			border-top:1px solid #CCC;
+		}
+		#product_list li a {
+			clear:left;
+			text-align:center;
+			width:100%;
+		}
+		#product_list li a.product_img_link{
+			width:50%;
+			margin-left:25%;
+		}
+		#product_list li a.product_img_link img{
+			width:100%;
+		}
+		#product_list li .content_price {
+			margin:0;
+			width:100%;
+			text-align:center;
+			float:left;
+		}
+		#product_list li .exclusive {
+			margin:0;
+			width:100%;
+			text-align:center;
+			float:left;
+		}
+		#product_list li .ajax_add_to_cart_button {
+			float:left;	
+			width:80%;
+			margin-left:10%;
+		}
+		div.customPageBg{
+			text-align:center;
+		}
+
+	}

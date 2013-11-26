@@ -25,7 +25,7 @@
 
 		{if !$content_only}
 			<div class="row">
-				{if $page_name != 'cms'}
+				{if $cms_category->id != 2}
 					<div class="three large-3 sixteen small-16 columns">
 						{$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in USAHospitalityTheme/css/modules/blockcategories -->
 					</div>

@@ -35,12 +35,17 @@
 					<li><a href="{$link->getPageLink('order-slip', true)}" title="{l s='List of my credit slips' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My credit slips' mod='blockmyaccountfooter'}</a></li>
 					<li><a href="{$link->getPageLink('addresses', true)}" title="{l s='List of my addresses' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My addresses' mod='blockmyaccountfooter'}</a></li>
 					<li><a href="{$link->getPageLink('identity', true)}" title="{l s='Manage my personal information' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My personal info' mod='blockmyaccountfooter'}</a></li>
+					<li><a href="http://www.usahospitality.com/admin/admin.php">{'Admin Panel'}</a></li>
 					{if $voucherAllowed}<li><a href="{$link->getPageLink('discount', true)}" title="{l s='List of my vouchers' mod='blockmyaccountfooter'}" rel="nofollow">{l s='My vouchers' mod='blockmyaccountfooter'}</a></li>{/if}
 					{$HOOK_BLOCK_MY_ACCOUNT}
+					
 				<p class="logout"><a href="{$link->getPageLink('index')}?mylogout" title="{l s='Sign out' mod='blockmyaccountfooter'}" rel="nofollow">{l s='Sign out' mod='blockmyaccount'}</a></p>
                 {else}
                 <li><a href="index.php?controller=my-account">{l s='Log in/Register'}</a></li>
+				<li><a href="http://www.usahospitality.com/admin/admin.php">{'Admin Panel'}</a></li>
                 {/if} 
+				</br>
+				
 		</div>
 	</div>
 </div>

@@ -655,7 +655,11 @@ a#title_block_footer_link{
 	height:auto;	
 }
 #cmsMenu{
-	width:200px;
+	width:100%;
+}
+.fourteen #cmsMenu {
+	width:300px !important;
+	
 }
 .mobileArrows{
 	display:none;

@@ -137,7 +137,7 @@
                                     <td class="delivery_option_logo">
                                         {foreach $option.carrier_list as $carrier}
                                             {if $carrier.logo}
-                                                <img src="{$carrier.logo}" alt="{$carrier.instance->name}"/>
+                                                <img src="{$carrier.logo}" alt="{$carrier.instance->name}" width="40" height"40"/> 
                                             {else if !$option.unique_carrier}
                                                 {$carrier.instance->name}
                                                 {if !$carrier@last} - {/if}

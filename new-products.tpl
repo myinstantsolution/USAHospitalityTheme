@@ -43,7 +43,8 @@
     
         <div class="content_sortPagiBar">
             <div class="sortPagiBar clearfix">
-                {include file="./product-sort.tpl"} {include file="./product-compare.tpl"} {include file="./nbr-product-page.tpl"}
+				{*Don't need to include these 3 on this page when they are shown already up above*}
+                {*{include file="./product-sort.tpl"} {include file="./product-compare.tpl"} {include file="./nbr-product-page.tpl"}*}
     
             </div>
             {include file="./pagination.tpl"}

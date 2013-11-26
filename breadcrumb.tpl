@@ -26,7 +26,12 @@
 <!-- Breadcrumb -->
 {if isset($smarty.capture.path)}{assign var='path' value=$smarty.capture.path}{/if}
 <div class="breadcrumb">
+	{*We want the breadcrumb home icon to take us to the shop home if the user is on a category page, product page, or product comparison page. Otherwise, it should take you to the static home page*}
+	{if $smarty.get.controller == 'category' || $smarty.get.controller == 'product' || $smarty.get.controller == 'productscomparison' || $smarty.get.controller == 'newproducts'}
+	<a href="{$base_dir}index.php?controller=shophome" title="{l s='Return to Shop Home'}"><img src="{$img_dir}icon/home.gif" height="20" width="20" alt="{l s='Home'}" /></a>
+	{else}
 	<a href="{$base_dir}" title="{l s='Return to Home'}"><img src="{$img_dir}icon/home.gif" height="20" width="20" alt="{l s='Home'}" /></a>
+	{/if}
 	{if isset($path) AND $path}
 		<span class="navigation-pipe" {if isset($category) && isset($category->id_category) && $category->id_category == 1}style="display:none;"{/if}>{$navigationPipe|escape:html:'UTF-8'}</span>
 		{if !$path|strpos:'span'}

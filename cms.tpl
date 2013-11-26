@@ -23,12 +23,13 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-{*so breadcrumbs don't show up on the home page*}
-{if ($content_only == 0 && $cms_category->id !=2)}
-	{include file="$tpl_dir./breadcrumb.tpl"}
-{/if}
+
 
 {if isset($cms) && !isset($cms_category)}
+{*so breadcrumbs don't show up on the home page*}
+
+	{include file="$tpl_dir./breadcrumb.tpl"}
+
 	{if !$cms->active}
 		<br />
 		<div id="admin-action-cms">
@@ -106,15 +107,17 @@
 	
 	{*so they show?*}
 	{if $cms_category->id == 3}
+	{include file="$tpl_dir./breadcrumb.tpl"}
 		<a href="index.php?id_cms_category=4&controller=cms">About us</a><br />
 		<a href="index.php?id_cms_category=5&controller=cms">Infrastructure</a><br />
 		<a href="index.php?id_cms_category=6&controller=cms">Customers</a><br />
 		<a href="index.php?id_cms_category=7&controller=cms">Divisions</a><br />
 		<a href="index.php?id_cms_category=8&controller=cms">HB2B</a><br />
 	{/if}
-	
+
 	{if isset($sub_category) & !empty($sub_category)}	
 			<p class="title_block">{l s='List of sub categories in %s:' sprintf=$cms_category->name}</p>
+			{include file="$tpl_dir./breadcrumb.tpl"}
 			<ul class="bullet">
 				{foreach from=$sub_category item=subcategory}
 					<li>
@@ -126,6 +129,7 @@
 		
 		{if isset($cms_pages) & !empty($cms_pages)}
 		<p class="title_block">{l s='List of pages in %s:' sprintf=$cms_category->name}</p>
+		{include file="$tpl_dir./breadcrumb.tpl"}
 			<ul class="bullet">
 				{foreach from=$cms_pages item=cmspages}
 					<li>
@@ -134,6 +138,7 @@
 				{/foreach}
 			</ul>
 		{/if}	
+		
 	
 {else}
 	<div class="error">
