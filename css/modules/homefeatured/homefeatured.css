@@ -42,8 +42,8 @@ p.s_title_block{
 		margin-left:10%;
 		margin-right:10%;
 		width:80%;
-		min-height:300px;
-		height:300px;
+		height:auto;
+		min-height:0px;
 		border-bottom:1px solid #999;
 	}
 	#featured-products_block_center li:last-of-type{

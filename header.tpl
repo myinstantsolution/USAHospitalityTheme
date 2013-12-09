@@ -62,10 +62,12 @@
 	<script type="text/javascript" src="{$js_uri}"></script>
 	{/foreach}
 {/if}
+
 		{$HOOK_HEADER}
 	</head>
 	
 	<body {if isset($page_name)}id="{$page_name|escape:'htmlall':'UTF-8'}"{/if} class="{if $hide_left_column}hide-left-column{/if} {if $hide_right_column}hide-right-column{/if} {if $content_only} content_only {/if}">
+	
 	{if !$content_only}
 		{if isset($restricted_country_mode) && $restricted_country_mode}
 		<div id="restricted-country">
@@ -89,15 +91,15 @@
 						<ul>
 							{$HOOK_TOP}
                             {if !$logged}
-                        	<a href="index.php?id_cms=4&controller=cms"><li>Contact Us</li></a>
+                        	<a href="{$base_dir}index.php?id_cms=4&controller=cms"><li>Contact Us</li></a>
                             {/if}
                             {if $logged}
-                            <a href="index.php?controller=my-account"><li>My Account</li></a>
+                            <a href="{$base_dir}index.php?controller=my-account"><li>My Account</li></a>
                             <a href="{$link->getPageLink('index')}?mylogout"><li>Log Out</li></a>
                             {else}
-                            <a href="index.php?controller=my-account"><li>Log in/Register</li></a>
+                            <a href="{$base_dir}index.php?controller=my-account"><li>Login/Register</li></a>
                             {/if}
-                            <a href="index.php?controller=order"><li>My Cart</li></a>
+                            <a href="{$base_dir}index.php?controller=order"><li>My Cart</li></a>
                             <!--<img id="cartImg" src="{$img_dir}cart-icon.png" alt="" />-->
                         </ul>
 					</div>
@@ -107,7 +109,7 @@
             <div class="row">
 				<div class="sixteen large-16 sixteen small-16 columns">
 					<div class="panelLogoImages">
-						<a href="index.php">
+						<a href="{$base_dir}index.php">
 							<img id="leftImg" src="{$img_dir}usa-logo-large.png" alt="" />
 						</a>
 						<div id="rightImgSizeLarge"></div>
@@ -119,10 +121,10 @@
 						<!--<p id="rightImgText">Supplies for Lodging, Entertainment and Food Service</p>-->
 					</div>
 					<div class="panelLogoImagesM">
-						<a href="index.php"><img id="leftImgM" src="{$img_dir}usa-logo-large.png" alt="" /></a>
+						<a href="{$base_dir}index.php"><img id="leftImgM" src="{$img_dir}usa-logo-large.png" alt="" /></a>
 					</div>
 					<div class="panelLogoImagesMSmall">
-						<a href="index.php"><img id="leftImgMSmall" src="{$img_dir}usa-logo-sm.png" alt="" /></a>
+						<a href="{$base_dir}index.php"><img id="leftImgMSmall" src="{$img_dir}usa-logo-sm.png" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -138,44 +140,36 @@
                                 <input type="submit" id="submit" name="submit_search" value="Search" >
 							</form> 
                             <ul>
-                                <a href="index.php?id_cms_category=3&controller=cms"><li>Company<div class="mobileArrows">&gt;</div>
+                                <a href="{$base_dir}index.php?id_cms_category=3&controller=cms"><li>Company<div class="mobileArrows">&gt;</div>
                                     <ul class="menuDropDown">
-                                        <a href="index.php?id_cms_category=4&controller=cms"><li>About Us</li></a>
-                                        <a href="index.php?id_cms_category=5&controller=cms"><li>Infrastructure</li></a>
-                                        <a href="index.php?id_cms_category=6&controller=cms"><li>Customers</li></a>
-										<a href="index.php?id_cms_category=7&controller=cms"><li>Divisions</li></a>
-                                        <a href="index.php?id_cms_category=8&controller=cms"><li>Hospitality B2B</li></a>
+                                        <a href="{$base_dir}index.php?id_cms_category=9&controller=cms"><li>About Us</li></a>
+                                        <a href="{$base_dir}index.php?id_cms_category=10&controller=cms"><li>Divisions</li></a>
+                                        <a href="{$base_dir}index.php?id_cms=30&controller=cms"><li>Credentials</li></a>
+										<a href="{$base_dir}index.php?id_cms=31&controller=cms"><li>Terms & Conditions</li></a>
                                     </ul>
                                 </li></a>
-                                <a href="index.php?id_cms_category=5&controller=cms"><li>Menu2<div class="mobileArrows">&gt;</div>
+                                <a href="{$base_dir}index.php"><li>Products<div class="mobileArrows">&gt;</div></li></a>
+                                <a href="{$base_dir}index.php?id_cms_category=5&controller=cms"><li>Hospitality B2B<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
-                                        <a href="index.php?controller=shophome"><li>Shop Home</li></a>
-										<a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
+                                        <a href="{$base_dir}index.php?id_cms_category=16&controller=cms"><li>News</li></a>
+										<a href="{$base_dir}index.php?id_cms_category=17&controller=cms"><li>Education</li></a>
+										<a href="{$base_dir}index.php?id_cms_category=18&controller=cms"><li>Job Opportunity</li></a>
+										<a href="{$base_dir}index.php?id_cms_category=19&controller=cms"><li>Trading</li></a>
+										<a href="{$base_dir}index.php?id_cms=50&controller=cms"><li>Global MSDS</li></a>
+										<a href="{$base_dir}index.php?id_cms_category=20&controller=cms"><li>Hospitality Directory</li></a>
                                     </ul>
 								</li></a>
-                                <a href="index.php?id_cms_category=6&controller=cms"><li>Menu3<div class="mobileArrows">&gt;</div>
+                                <a href="{$base_dir}index.php?id_cms=62&controller=cms"><li>Customers<div class="mobileArrows">&gt;</div></li></a>
+                                <a href="{$base_dir}index.php?id_cms_category=7&controller=cms"><li>MSDS<div class="mobileArrows">&gt;</div></li></a>
+                                <a href="{$base_dir}index.php?id_cms_category=8&controller=cms"><li>Resources<div class="mobileArrows">&gt;</div>
 									<ul class="menuDropDown">
-                                        <a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
+                                        <a href="http://myinstantsolution.com/testing/wordpress/" target="_blank"><li>Blog</li></a>
+										<a href="{$base_dir}index.php?id_cms=54&controller=cms"><li>Forum</li></a>
+										<a href="{$base_dir}index.php?id_cms=56&controller=cms"><li>Social Media</li></a>
+										<a href="{$base_dir}index.php?id_cms=55&controller=cms"><li>Library</li></a>
+										<a href="{$base_dir}index.php?id_cms=57&controller=cms"><li>Video Library</li></a>
                                     </ul>
 								</li></a>
-                                <a href="index.php?id_cms_category=7&controller=cms"><li>Menu4<div class="mobileArrows">&gt;</div>
-									<ul class="menuDropDown">
-                                        <a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
-                                    </ul>
-								</li></a>
-                                <a href="index.php?id_cms_category=8&controller=cms"><li>Menu5<div class="mobileArrows">&gt;</div>
-									<ul class="menuDropDown">
-                                        <a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
-										<a href="#"><li>Dropdown</li></a>
-                                    </ul>
-								</li></a>
-                                <!--<a href="cms.php"><li>Hospitality B2B</li></a>-->
                             </ul>
                         </div>
 						<div id="panelTopMenuM">
@@ -191,10 +185,11 @@
 								<p class="titleBarMobileMenu">MENU</p>
 								<select onChange="window.location.href=this.value">
 									<option value="index.php?id_cms_category=3&controller=cms">Company</option>
-									<option value="index.php?id_cms_category=5&controller=cms">Menu2</option>
-									<option value="index.php?id_cms_category=6&controller=cms">Menu3</option>
-									<option value="index.php?id_cms_category=7&controller=cms">Menu4</option>
-									<option value="index.php?id_cms_category=8&controller=cms">Menu5</option>
+									<option value="index.php?id_cms_category=5&controller=cms">Products</option>
+									<option value="index.php?id_cms_category=6&controller=cms">Hospitality B2B</option>
+									<option value="index.php?id_cms_category=7&controller=cms">Customers</option>
+									<option value="index.php?id_cms_category=8&controller=cms">MSDS</option>
+									<option value="index.php?id_cms_category=8&controller=cms">Resources</option>
 								</select>
 							{/if}
 						</div>

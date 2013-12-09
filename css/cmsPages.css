@@ -1,0 +1,143 @@
+/*test */
+.cmsPanelTitle{
+	clear:left;
+	float:left;
+	width:100%;
+	height:100px;
+	line-height:50px;
+	font-size:18px;
+	color:#FFF;
+	text-align:center;
+	background-color:#1276b8;
+}
+.cms5Col1, .cms5Col2, .cms5Col3, .cms5Col4, .cms5Col5{
+	float:left;
+	overflow:hidden;
+	width:18%;
+	margin-left:1%;
+	height:auto;
+	margin-top:10px;
+	border:1px solid #999;
+	border-radius:5px;
+	webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+.cms5Col1:hover, .cms5Col2:hover, .cms5Col3:hover, .cms5Col4:hover, .cms5Col5:hover{
+	box-shadow:#000 0em 0em 1.1em;
+}
+
+.cms4Col1, .cms4Col2, .cms4Col3, .cms4Col4{
+	float:left;
+	overflow:hidden;
+	width:23%;
+	margin-left:1.5%;
+	height:auto;
+	margin-top:10px;
+	border:1px solid #999;
+	border-radius:5px;
+	webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.cms4Col1:hover, .cms4Col2:hover, .cms4Col3:hover, .cms4Col4:hover{
+	box-shadow:#000 0em 0em 1.1em;
+}
+
+.cms3Col1, .cms3Col2, .cms3Col3{
+	float:left;
+	overflow:hidden;
+	width:31%;
+	margin-left:2%;
+	height:auto;
+	margin-top:10px;
+	border:1px solid #999;
+	border-radius:5px;
+	webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.cms3Col1:hover, .cms3Col2:hover, .cms3Col3:hover{
+	box-shadow:#000 0em 0em 1.1em;
+}
+.cms2Col1, .cms2Col2{
+	float:left;
+	overflow:hidden;
+	width:47%;
+	margin-left:2%;
+	height:auto;
+	margin-top:10px;
+	border:1px solid #999;
+	border-radius:5px;
+	webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+.cms2Col1:hover, .cms2Col2:hover{
+	box-shadow:#000 0em 0em 1.1em;
+}
+
+.cms5Col1 img, .cms5Col2 img, .cms5Col3 img, .cms5Col4 img, .cms5Col5 img{
+	position:relative;
+	height:415px;
+	min-width:350px !important;
+}
+.cms4Col1 img, .cms4Col2 img, .cms4Col3 img, .cms4Col4 img{
+	position:relative;
+	height:415px;
+	min-width:350px !important;
+}
+.cms3Col1 img, .cms3Col2 img, .cms3Col3 img{
+	position:relative;
+	left:-20%;
+	height:415px;
+	min-width:350px !important;
+}
+.cms2Col1 img, .cms2Col2 img{
+	position:relative;
+	height:415px;
+	min-width:350px !important;
+}
+@media only screen and (max-width: 960px) {
+	.cms3Col3{
+		display:none;
+	}
+	.cms3Col1, .cms3Col2{
+		width:47%;
+		margin-left:2%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.cms3Col1, .cms3Col2, .cms3Col3{
+		display:block;
+		width:100%;
+		margin-left:0;
+		clear:left;
+		float:left;
+	}
+	.cmsPanelTitle{
+		display:block;
+		float:left;
+		clear:left;
+		width:100%;
+		height:35px;
+		background-color:#7fb539;
+		line-height:35px;
+		border-radius:5px;
+		border:1px solid #999;
+	}
+	.cms3Col3 img, .cms3Col2 img, .cms3Col1 img{
+		display:none;
+	}
+}
+/*test */

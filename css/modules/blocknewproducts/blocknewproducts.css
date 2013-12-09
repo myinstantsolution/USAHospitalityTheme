@@ -69,3 +69,31 @@ a.lnk_more:hover{
 		float:none;
 	}
 }
+@media only screen and (max-width: 1600px) {
+	.titleBar a{
+		font-size:13px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.titleBar a{
+		font-size:12px;
+	}
+	p.title_block{
+		font-size:14px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.titleBar a{
+		font-size:12px;
+	}
+	p.title_block{
+		font-size:12px;
+	}
+}
+@media only screen and (max-width: 930px) {
+	
+	}
+}
+@media only screen and (max-width: 860px) {
+	
+}

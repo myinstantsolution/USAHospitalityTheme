@@ -26,6 +26,7 @@
 		<div class="panelCenterImg">
 			<img src="{$img_dir}promo-bannerg.png" alt="" />
 		</div>
+
 							
 		<div class="panelFeaturedProducts">
 

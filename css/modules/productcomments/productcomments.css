@@ -1,0 +1,27 @@
+.comment_author{
+float:left;
+width:100%;
+background-color:#1276b8;
+color:#FFF;
+}
+.comment_title{
+font-size:18px;
+}
+.comment_details{
+float:left;
+width:100%;
+background-color:#FFF;
+color:#6d6e71;
+margin-bottom:10px;
+}
+.usefulness_btn{
+padding:.2px;
+border:1px solid #FFF;
+}
+span.report_btn{
+text-decoration:underline;
+cursor:pointer;
+}
+.comment_details ul{
+margin-top:10px;
+}

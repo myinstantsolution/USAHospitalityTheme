@@ -41,7 +41,7 @@
 					
 				<p class="logout"><a href="{$link->getPageLink('index')}?mylogout" title="{l s='Sign out' mod='blockmyaccountfooter'}" rel="nofollow">{l s='Sign out' mod='blockmyaccount'}</a></p>
                 {else}
-                <li><a href="index.php?controller=my-account">{l s='Log in/Register'}</a></li>
+                <li><a href="{$base_dir}index.php?controller=my-account">{l s='Log in/Register'}</a></li>
 				<li><a href="http://www.usahospitality.com/admin/admin.php">{'Admin Panel'}</a></li>
                 {/if} 
 				</br>

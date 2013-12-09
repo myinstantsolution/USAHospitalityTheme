@@ -11,11 +11,15 @@
 	color:#FFF;	
 }
 
-#best-sellers_block_right .block_content{
+#best-sellers_block_center .block_content{
 	border:1px solid #999;
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
 }
+#best-sellers_block_center .product_img img{
+	border:1px solid #999;
+}
+
 
 ul.product_images{
 	list-style:none;	

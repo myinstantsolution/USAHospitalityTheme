@@ -22,25 +22,14 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
-		{if !$content_only}
-			<div class="row">
-					<div class="three large-3 sixteen small-16 columns">
-						{$HOOK_LEFT_COLUMN} <!--This includes the left categories menu. Some CSS styling in USAHospitalityTheme/css/modules/blockcategories -->
-						{if $page_name == 'cms'}
-							<div id="sideCmsImage">
-								<img src="" alt="" />
-								<div id="sideCmsDesc">
-									{if isset($cms_category)}
-									{$cms_category->name}
-									{else}
-									{$cms->meta_title}
-									{/if}
-								</div>
-							</div>
-						{/if}
-					</div>
-					<div class="eleven large-11 sixteen small-16 columns" id="container">				           	
-		{/if}
-	</body>
-</html>
+{if $status == 'ok'}
+	<p>{l s='Your order on' mod='authorizeaim'} <span class="bold">{$shop_name}</span> {l s='is complete.' mod='authorizeaim'}
+		<br /><br /><span class="bold">{l s='Your order will be sent as soon as possible.' mod='authorizeaim'}</span>
+		<br /><br />{l s='For any questions or for further information, please contact our' mod='authorizeaim'} <a href="{$link->getPageLink('contact', true)}">{l s='customer support' mod='authorizeaim'}</a>.
+	</p>
+{else}
+	<p class="warning">
+		{l s='We noticed a problem with your order. If you think this is an error, you can contact our' mod='authorizeaim'} 
+		<a href="{$link->getPageLink('contact', true)}">{l s='customer support' mod='authorizeaim'}</a>.
+	</p>
+{/if}

@@ -24,11 +24,18 @@
 *}
 
 
+{literal}<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{/literal}
 
 {if isset($cms) && !isset($cms_category)}
 {*so breadcrumbs don't show up on the home page*}
-
-	{include file="$tpl_dir./breadcrumb.tpl"}
 
 	{if !$cms->active}
 		<br />
@@ -46,12 +53,48 @@
 	<div class="rte{if $content_only} content_only{/if}">
 		
 			<div id="landingOptionsBody">
+			<p class="titleBar">{$meta_title}</p>
+			{include file="$tpl_dir./breadcrumb.tpl"}
 			{$cms->content}
+			
+			{if $smarty.get.id_cms == '52'}
+			<div class="cmsTitles">Latest social media news!</div>
+			<div id="socialmediafbtw" style="border-left:1px solid #999;border-right:1px solid #999">{literal}<div style="height:500px;width:300px;float:left;margin-left:10px;margin-top:10px;border:1px solid #999;"><a class="twitter-timeline" href="https://twitter.com/UsaHospitality" data-widget-id="407580729971728384">Tweets by @UsaHospitality</a></div>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>{/literal}
+
+			<div style="float:left;margin-left:10px;margin-top:10px;">
+				<div class="fb-like-box" data-href="http://www.facebook.com/USAHospitality" data-width="300" data-height="500" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div>
+			</div>
+			</br >
+			<div class="clearBoth"></div>
+			</div>
+			{/if}
+			
+			{if $smarty.get.id_cms == '57'}
+			<p class="cmsTitles">Featured: Roses vs. gen 800</p>
+			<div id="youtube_featured_video"><iframe src="http://www.youtube.com/embed/SmPnCBSu3V8" frameborder="0" allowfullscreen></iframe></div>
+			<div class="youtube_videos"><iframe src="http://www.youtube.com/embed/x08eUkEY5lI" frameborder="0" allowfullscreen></iframe></div>
+			<div class="youtube_videos"><iframe src="http://www.youtube.com/embed/nHRebSrVtt4" frameborder="0" allowfullscreen></iframe></div>
+			<div class="youtube_videos"><iframe src="http://www.youtube.com/embed/P1pJHyn-1eQ" frameborder="0" allowfullscreen></iframe></div>
+			{/if}
+			
+			{if $smarty.get.id_cms == '32'}
+			<p class="cmsTitles">History</p>
+			<div class="cms3Col1"><img src="{$img_dir}testimg.png" alt=""/ ></div>
+			<div class="cms3Col2"><img src="{$img_dir}testimg.png" alt=""/ ></div>
+			<div class="cms3Col3"><img src="{$img_dir}testimg.png" alt=""/ ></div>
+			
+			{/if}
+			
+			
+			
+				{*
 				<a href="index.php?id_cms=7&controller=cms"><div class="landingOptionsSmallFirst">To lodging</div></a>
 				<a href="index.php?id_cms=8&controller=cms"><div class="landingOptionsSmall">To entertainment</div></a>
 				<a href="index.php?id_cms=9&controller=cms"><div class="landingOptionsSmall">To food service</div></a>
 				<a href="index.php?id_cms=10&controller=cms"><div class="landingOptionsSmall">To services and solutions</div></a>
-				<a href="index.php?id_cms=11&controller=cms"><div class="landingOptionsSmall">to help center</div></a>
+				<a href="index.php?id_cms=11&controller=cms"><div class="landingOptionsSmall">to help center</div></a> *}
+				
 				<div class="clearBoth"></div> <!--to make height: auto; work-->
 			</div>
 
@@ -81,7 +124,7 @@
 		<div class="col1">1</div>
 		
 		
-		{if isset($sub_category) & !empty($sub_category)}	
+		{*{if isset($sub_category) & !empty($sub_category)}	
 			<p class="title_block">{l s='List of sub categories in %s:' sprintf=$cms_category->name}</p>
 			<ul class="bullet">
 				{foreach from=$sub_category item=subcategory}
@@ -102,22 +145,23 @@
 				{/foreach}
 			</ul>
 		{/if}
+		*}
 	</div>
-	{elseif $cms_category->id != 2}
 	
-	{*so they show?*}
-	{if $cms_category->id == 3}
-	{include file="$tpl_dir./breadcrumb.tpl"}
-		<a href="index.php?id_cms_category=4&controller=cms">About us</a><br />
-		<a href="index.php?id_cms_category=5&controller=cms">Infrastructure</a><br />
-		<a href="index.php?id_cms_category=6&controller=cms">Customers</a><br />
-		<a href="index.php?id_cms_category=7&controller=cms">Divisions</a><br />
-		<a href="index.php?id_cms_category=8&controller=cms">HB2B</a><br />
+	{elseif $cms_category} {*if the page is a cms category (means it has pages that branch off inside it) then advance *}
+	<p class="title_block">{$cms_category->name}</p> {*loads the name of the cms page at the top*}
+	{include file="$tpl_dir./breadcrumb.tpl"} {* shows breadcrumbs *}
+	
+	{if $cms_category->id == 11} {*if the cms category page is the infastructure page, then load these images *}
+			<a href="{$base_dir}index.php?id_cms=35&controller=cms"><div class="cms3Col1"><img src="{$img_dir}testimg.png" alt=""/ ><div class="cmsPanelTitle">Company Video</div></a></div>
+			<a href="{$base_dir}index.php?id_cms=36&controller=cms"><div class="cms3Col2"><img src="{$img_dir}testimg.png" alt=""/ ><div class="cmsPanelTitle">Company Structure</div></a></div>
+			<a href="{$base_dir}index.php?id_cms=37&controller=cms"><div class="cms3Col3"><img src="{$img_dir}testimg.png" alt=""/ ><div class="cmsPanelTitle">Photo Gallery</div></a></div>
 	{/if}
-
+		
+	{*
 	{if isset($sub_category) & !empty($sub_category)}	
-			<p class="title_block">{l s='List of sub categories in %s:' sprintf=$cms_category->name}</p>
-			{include file="$tpl_dir./breadcrumb.tpl"}
+			<p class="title_block">{$cms_category->name}</p>
+			
 			<ul class="bullet">
 				{foreach from=$sub_category item=subcategory}
 					<li>
@@ -128,8 +172,8 @@
 		{/if}
 		
 		{if isset($cms_pages) & !empty($cms_pages)}
-		<p class="title_block">{l s='List of pages in %s:' sprintf=$cms_category->name}</p>
-		{include file="$tpl_dir./breadcrumb.tpl"}
+		<p class="title_block">{$cms_category->name}</p>
+		
 			<ul class="bullet">
 				{foreach from=$cms_pages item=cmspages}
 					<li>
@@ -138,8 +182,7 @@
 				{/foreach}
 			</ul>
 		{/if}	
-		
-	
+		*}	
 {else}
 	<div class="error">
 		{l s='This page does not exist.'}

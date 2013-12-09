@@ -26,13 +26,9 @@
 		{if !$content_only}		
         		</div>			
                     <div class="two large-2 sixteen small-16 columns">
-							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
-							{if $page_name != 'cms'}
-								<div class="panelBestSellers">
-									<div class="clearBoth"></div> <!--to make height: auto; work-->
-                                    {$HOOK_RIGHT_COLUMN}
-								</div>
 
+							<!--If the page is a cms page, don't show best sellers or manufacturers. Show the news block.-->
+							{if $page_name != 'cms'}								
 								<div class="panelManufacturers">
 									<p class="titleBar">MANUFACTURERS</p>
 									<div id="manufacturersContainer">
@@ -49,10 +45,11 @@
 								<div class="panelNews">
 									<p class="titleBar">NEWS</p>
 									<div id="newsContainer">
-										News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />
-										News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />
-										News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!<br />News!
-
+									
+									{literal}<div style="overflow: hidden; border: 1px solid #d5d5d5;width:100%;">
+									<a class="twitter-timeline" href="https://twitter.com/UsaHospitality" data-widget-id="407580729971728384">Tweets by @UsaHospitality</a>
+									</div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>{/literal}
 									</div>
 									<div class="clearBoth"></div> <!--to make height: auto; work-->
 								</div>
